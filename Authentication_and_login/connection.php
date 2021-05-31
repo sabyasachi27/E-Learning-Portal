@@ -5,5 +5,5 @@
         $password = "Sm227121999";
         $databasename = "freedbtech_elearningportal";
 
-        $connection = mysqli_connect($host, $username, $password, $databasename);
+        $con = mysqli_connect($host, $username, $password, $databasename);
 ?>
