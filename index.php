@@ -367,8 +367,8 @@
         </div>
         <!-- this div is for the buttons -->
         <div class="right">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "C:\xampp\htdocs\E_Learning_Portal\Authentication_and_login\registeras.php">Register</a></button>
-            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "C:\xampp\htdocs\E_Learning_Portal\Authentication_and_login\Login.php">Login</a></button>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "Authentication_and_login\registeras.php">Register</a></button>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "Authentication_and_login\Login.php">Login</a></button>
 
             
         </div>            
