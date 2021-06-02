@@ -13,7 +13,7 @@
 	<title></title>
 </head>
 <body>
-	<form action="login-acc.php" method="post">
+	<form action="login-teacher-acc.php" method="post">
 		Email: <input type="email" name="email"><br><br>
 		Password: <input type="password" name="password"><br><br>
 		<input type="submit" value="Login">

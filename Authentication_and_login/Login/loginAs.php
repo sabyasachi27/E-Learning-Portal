@@ -20,10 +20,11 @@
 </head>
 <body>
 
-<h1>Register As:</h1>
+<h1>Login As:</h1>
 
-<button onclick = "register-student.php"class="button button1">Learner</button>
-<button oncclick = "register-teacher.php"class="button button2">Teacher</button>
+<button action = "login-student.php" class="button button1"><a href = "login-student.php">Learner</a></button>
+
+<button action = "login-teacher.php" class="button button2"><a href = "login-teacher.php">Teacher</a></button>
 
 </body>
 </html>

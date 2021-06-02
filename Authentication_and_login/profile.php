@@ -19,12 +19,7 @@
 
 	$q1 = mysqli_query($con, $qr);
 
-	while($name = mysqli_fetch_array($q1)) {
-		// print_r($skill);
-		echo $skill['name'];
-		echo '<br>';
-	}
-
+	
 
 
 	// echo 'Welcome to your profile '.$user['name'];
