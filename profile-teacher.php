@@ -3,17 +3,15 @@
 	
 	session_start();
 	if (!isset($_SESSION['id'])) {
-		header('location: login.php');
+		header('location: login-teacher.php');
 	}
 ?>
 <?php
 	
-	$qr = 	"SELECT 
+	/*$qr = 	"SELECT 
 				*
 			FROM 
-				`student`
-            AND
-                `teacher`
+				`teacher`
 			WHERE 
 				`id` = ".$_SESSION['id'];
 
@@ -22,10 +20,12 @@
 	
 
 
-	// echo 'Welcome to your profile '.$user['name'];
-	// echo '<br>';
+	 echo 'Welcome to your profile '.$teacher['name'];
+	 echo '<br>';
 
-	// echo 'Email: '.$user['email'];
+	 echo 'Email: '.$teacher['email'];*/
+
+     echo "Login Success";
 
 ?>
 

@@ -3,7 +3,7 @@
 <?php 
 
     //checking duplication
-    $q1 = mysqli_query($con, "SELECT `id`FROM `student` WHERE `email` = '".$_REQUEST['email']."'");
+    $q1 = mysqli_query($con, "SELECT `id` FROM `student` WHERE `email` = '".$_REQUEST['email']."'");
     $num = mysqli_num_rows($q1);
     if($num == 0) {
 
@@ -13,8 +13,8 @@
 
         if($qry_exec)
         {
-            //echo "Register Successful";
-            header('location: Authentication_and_login\Login\login.php');
+            echo "Register Successful";
+            header('location: loginAs.php');
         }
         else
         {

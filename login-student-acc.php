@@ -15,7 +15,7 @@
 		// print_r($user);
 		$_SESSION['id'] = $user['id'];
 
-		//header('location: profile.php');
+		header('location: profile-student.php');
 		echo "Login successful";
 
 	} else {

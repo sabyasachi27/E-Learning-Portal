@@ -13,8 +13,8 @@
 
         if($qry_exec)
         {
-            //echo "Register Successful";
-            header('location: Authentication_and_login\Login\login.php');
+            echo "Register Successful";
+            header('location: loginAs.php');
         }
         else    
         {
