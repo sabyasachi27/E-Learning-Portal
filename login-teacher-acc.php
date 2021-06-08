@@ -19,6 +19,6 @@
 		echo "Login successful";
 
 	} else {
-		header('location: login.php?message=Email or Password Incorrect. Please check your credentials');
+		header('location: login-teacher.php?message=Email or Password Incorrect. Please check your credentials');
 	}
 ?>

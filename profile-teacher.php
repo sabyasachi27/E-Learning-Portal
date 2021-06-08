@@ -55,8 +55,8 @@ while($row = mysqli_fetch_array($qry1)) {
 	// print_r($row);
 	// echo $row['name'];
 	// echo "<br>";
-
-	echo "<tr>";
+	if($teacher['id'] === $row['user_id']){
+		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
 		echo "<td>".$row['user_id']."</td>";
 		echo "<td>".$row['name']."</td>";
@@ -64,6 +64,13 @@ while($row = mysqli_fetch_array($qry1)) {
 		echo "<td><a href='update-topic.php?id=".$row['id']."'>Update</a></td>";
 	echo "</tr>";
 }
+else {
+	echo "Please Insert your contents . Currently you don't have any contents";
+}
+
+	}
+
+	
 ?>
 
 
