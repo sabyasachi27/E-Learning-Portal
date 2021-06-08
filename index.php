@@ -12,399 +12,109 @@
     <meta property="og:image:width" content="200">
     <meta property="og:image:height" content="200">
     <script async="" src="//cse.google.com/adsense/search/async-ads.js"></script>
-    <script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script>
-    <script type="text/javascript" async="" src="https://cse.google.com/cse.js?cx=009682134359037907028:tj6eafkv_be"></script>
-    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
-    <script defer="" src="https://apis.google.com/js/platform.js" gapi_processed="true"></script>
+   <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
     <script async="" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
     <script async="" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/mrg0hpc.css">
     <title>Only Studies | Learning Platform</title>
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    /* Full-width input fields */
-    
-    input[type=text],
-    input[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-    }
-    /* Set a style for all buttons */
-    
-    button {
-        background-color: #04AA6D;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-    }
-    
-    button:hover {
-        opacity: 0.8;
-    }
-    /* Extra styles for the cancel button */
-    
-    .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        background-color: #f44336;
-    }
-    /* Center the image and position the close button */
-    
-    .imgcontainer {
-        text-align: center;
-        margin: 24px 0 12px 0;
-        position: relative;
-    }
-    
-    img.avatar {
-        width: 40%;
-        border-radius: 50%;
-    }
-    
-    .container {
-        padding: 16px;
-    }
-    
-    span.psw {
-        float: right;
-        padding-top: 16px;
-    }
-    /* The Modal (background) */
-    
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-        padding-top: 60px;
-    }
-    /* Modal Content/Box */
-    
-    .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto;
-        /* 5% from the top, 15% from the bottom and centered */
-        border: 1px solid #888;
-        width: 80%;
-        /* Could be more or less, depending on screen size */
-    }
-    /* The Close Button (x) */
-    
-    .close {
-        position: absolute;
-        right: 25px;
-        top: 0;
-        color: #000;
-        font-size: 35px;
-        font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: red;
-        cursor: pointer;
-    }
-    /* Add Zoom Animation */
-    
-    .animate {
-        -webkit-animation: animatezoom 0.6s;
-        animation: animatezoom 0.6s
-    }
-    
-    @-webkit-keyframes animatezoom {
-        from {
-            -webkit-transform: scale(0)
-        }
-        to {
-            -webkit-transform: scale(1)
-        }
-    }
-    
-    @keyframes animatezoom {
-        from {
-            transform: scale(0)
-        }
-        to {
-            transform: scale(1)
-        }
-    }
-    /* Change styles for span and cancel button on extra small screens */
-    
-    @media screen and (max-width: 300px) {
-        span.psw {
-            display: block;
-            float: none;
-        }
-        .cancelbtn {
-            width: 100%;
-        }
-    }
-</style>
-<style>
-    body {
-        margin: 0px;
-        padding: 0px;
-        background-image: url('used-books-store-2.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    
-    .mid {
-        display: block;
-        width: 19%;
-        margin: 16px auto;
-        border: 2px solid greenyellow;
-        font-size: 50px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    
-    .right {
-        position: absolute;
-        right: 34px;
-        top: 16px;
-        display: inline-block;
-        border: 2px solid green;
-    }
-    
-    .navbar li {
-        display: inline-block;
-        font-size: 20px;
-    }
-    
-    .navbar li a {
-        text-decoration: none;
-        padding: 23px;
-    }
-    
-    .navbar li a:hover,
-    .navbar li a.active {
-        text-decoration: underline;
-        color: greenyellow;
-    }
-    
-    .btn {
-        margin: 0px, 8px;
-        padding: 4px, 14px;
-        border: 2px solid red;
-        border-radius: 6px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: red;
-        color: white;
-        text-align: center;
-    }
-</style>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
-    /* Full-width input fields */
-    
-    input[type=text],
-    input[type=password] {
-        width: 100%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-    }
-    /* Add a background color when the inputs get focus */
-    
-    input[type=text]:focus,
-    input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-    }
-    /* Set a style for all buttons */
-    
-    button {
-        background-color: #04AA6D;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 0.9;
-    }
-    
-    button:hover {
-        opacity: 1;
-    }
-    /* Extra styles for the cancel button */
-    
-    .cancelbtn {
-        padding: 14px 20px;
-        background-color: #f44336;
-    }
-    /* Float cancel and signup buttons and add an equal width */
-    
-    .cancelbtn,
-    .signupbtn {
-        float: left;
-        width: 50%;
-    }
-    /* Add padding to container elements */
-    
-    .container {
-        padding: 16px;
-    }
-    /* The Modal (background) */
-    
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: #474e5d;
-        padding-top: 50px;
-    }
-    /* Modal Content/Box */
-    
-    .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto;
-        /* 5% from the top, 15% from the bottom and centered */
-        border: 1px solid #888;
-        width: 80%;
-        /* Could be more or less, depending on screen size */
-    }
-    /* Style the horizontal ruler */
-    
-    hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-    }
-    /* The Close Button (x) */
-    
-    .close {
-        position: absolute;
-        right: 35px;
-        top: 15px;
-        font-size: 40px;
-        font-weight: bold;
-        color: #f1f1f1;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: #f44336;
-        cursor: pointer;
-    }
-    /* Clear floats */
-    
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    /* Change styles for cancel button and signup button on extra small screens */
-    
-    @media screen and (max-width: 300px) {
-        .cancelbtn,
-        .signupbtn {
-            width: 100%;
-        }
-    }
-</style>
 
 <body>
-    <header>
-
-        <!-- this div is for the navigation bar -->
-        <div class="mid">
-            Online Learning
-        </div>
-        <!-- this div is for the buttons -->
-        <div class="right">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
-            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">Login</a></button>
-
-            
-        </div>            
-    </header>
-    <div class="footer">
-        <ul class="navbar">
-            <li> <a href="#" class="active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">More</a></li>
-            <li><a href="#">Contact US</a></li>
-        </ul>
-        <button class="btn">Contact Us</button>
-        <button class="btn">Email Us</button>
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">E Learning Portal</a>
     </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id02');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+ 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registeras.php"><span class="glyphicon glyphicon-user"></span><b>Register</b></a></li>  
+        <li><p class="navbar-text">Already have an account?</p></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								Login via
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+                                or
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center">
+								New here ? <a href="registeras.php"><b>Register</b></a>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav> 
 </body>
-
+<!-- this div is for the buttons -->
+       
+            <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
+            <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->
+        
 </html>
