@@ -9,6 +9,7 @@
 	if ($qry_exec) {
 		// echo "Registered Successfully";
 		header('location: profile-teacher.php');
+		echo "Update Successfully";
 	} else {
 		echo "Failed";
 	}

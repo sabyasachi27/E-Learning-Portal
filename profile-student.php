@@ -42,12 +42,10 @@
 $qry1 = mysqli_query($con, "SELECT * FROM `topic` WHERE `status` = 'active'");
 
 while($row = mysqli_fetch_array($qry1)) {
-	// print_r($row);
-	// echo $row['name'];
-	// echo "<br>";
+
 
 	echo "<tr>";
-		echo "<td>".$row['name']."</td>";
+		echo "<td><a href=contents.php?name=>".$row['name']."</a></td>";
 	echo "</tr>";
 }
 ?>

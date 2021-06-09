@@ -44,6 +44,7 @@
 		<th>Topic Name</th>
 		<th>Delete</th>
 		<th>Update</th>
+		<th>Edit Contents</th>
 	</tr>
 
 <?php 
@@ -52,16 +53,15 @@
 $qry1 = mysqli_query($con, "SELECT * FROM `topic` WHERE `status` = 'active'");
 
 while($row = mysqli_fetch_array($qry1)) {
-	// print_r($row);
-	// echo $row['name'];
-	// echo "<br>";
+	
 	if($teacher['id'] === $row['user_id']){
 		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
 		echo "<td>".$row['user_id']."</td>";
-		echo "<td>".$row['name']."</td>";
+		echo "<td><a href=contents.php?name=>".$row['name']."</a></td>";
 		echo "<td><a href='delete-topic.php?id=".$row['id']."'>Delete</a></td>";
 		echo "<td><a href='update-topic.php?id=".$row['id']."'>Update</a></td>";
+		echo "<td><a href='edit-acc.php?id=".$row['id']."'>Create</a></td>";
 	echo "</tr>";
 }
 else {

@@ -24,7 +24,7 @@ body{
 	font-size: 40px;
 	border-bottom: 5px solid purple;
 	margin-bottom: 34px;
-	padding 12px 0;
+	padding: 12px 0;
 }
 .box{
 	width: 100%;
