@@ -20,8 +20,9 @@ $qry_exec = mysqli_query($con, $qry);
 
         if($qry_exec)
         {
+            
         
-            header('location: profile-teacher.php');
+            header('location: edit-contents.php');
             echo "Successfully inserted the topic ";
         }
         else

@@ -1,9 +1,3 @@
-<?php include_once "connection.php"; ?>
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +5,7 @@
 </head>
 <body> 
 
-	<form action="edit-contents-acc.php" method="post">
+	<form action="update-contents-acc.php" method="post">
 		Heading: <input type="text" name="heading"><br><br>
 		Type/Subject: <input type="message" name="type"><br><br>
 		Links: <input type="hyperlink" name="links"><br><br>

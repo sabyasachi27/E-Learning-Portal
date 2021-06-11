@@ -79,7 +79,7 @@ body{
 			</div>
 			<div class="box">
 				<i class="fa fa-mobile"></i>
-				<input type="text" name="mobno" id="mobno" placeholder="Enter Your Phone Number">
+				<input type="tel" name="mobno" id="mobno"  placeholder="Enter Your Phone Number">
 			</div>	
 			<!--Image: <input type="file" id="img" name="img" accept="image/*"><br><br> -->
 			
