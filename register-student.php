@@ -64,28 +64,61 @@ body{
 <body>
 <div class= "container">
 	<h1>Register Yourself</h1>
-		<form action="register-acc-student.php" method="post">
+		<form action="register-acc-student.php" method="post" onSubmit="return validateForm();">
 			<div class="box">
 			<i class="fa fa-user"></i>
-				<input type="text" name="name" id="name" placeholder="Enter Your Name">
+				<input type="text" name="name" id="name" placeholder="Enter Your Name" required>
 			</div>
 			<div class="box">
 			    <i class="fa fa-envelope"></i>
-				<input type="email" name="email" id="email" placeholder="Enter Your Email">
+				<input type="email" name="email" id="email" placeholder="Enter Your Email" required>
 			</div>
 			<div class="box">	
 				<i class="fa fa-unlock"></i>
-				<input type="password" name="password" id="password" placeholder="Enter Your Password">
+				<input type="password" name="password" id="password" placeholder="Enter Your Password" required>
 			</div>
 			<div class="box">
 				<i class="fa fa-mobile"></i>
-				<input type="text" name="mobno" id="mobno" placeholder="Enter Your Phone Number">
+				<input type="text" name="mobile" id="mobile" pattern="[6789][0-9]{9}" title="Please, enter the valid 10 digit number" placeholder="Enter Your Phone Number" required>
 			</div>	
 			<!--Image: <input type="file" id="img" name="img" accept="image/*"><br><br> -->
 			
 			<button class="btn"><b>Register</b></button>
 		</form>
 	</div>
+	<script>
+		function validateForm()
+		{
+			// validating name
+			var name = document.getElementById('name').value;
+			if(name == "")
+			{
+				alert('Name field cannot be empty');
+				return false;
+			}
+			// validating email
+			var email = document.getElementById('email').value;
+			if(email == "")
+			{
+				alert('Email field cannot be empty');
+				return false;
+			}
+			// validating password
+			var password = document.getElementById('password').value;
+			if(password == "")
+			{
+				alert('Password field cannot be empty');
+				return false;
+			}
+			// validating mobile number
+			var mob_num = document.getElementById('mobno').value;
+			if(mob_num == "")
+			{
+				alert('Mobile number field cannot be empty');
+				return false;
+			}
+		}
+	</script>
 </body>
 
 </html>

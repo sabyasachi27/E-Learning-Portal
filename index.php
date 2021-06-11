@@ -66,7 +66,13 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="registeras.php"><span class="glyphicon glyphicon-user"></span><b>Register</b></a></li>  
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><b>Register</b><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="register-student.php">Learner</a></li>
+            <li><a href="register-teacher.php">Teacher</a></li>
+          </ul>
+        </li>  
         <li><p class="navbar-text">Already have an account?</p></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -110,7 +116,12 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav> 
+</nav>
+<section id="home">
+<h1>Welcome to our site</h1>
+<p>Do you get caught everytime you try to cheat? Then don't worry you are in the right place.</p> 
+<p>We give our students the best training which will help then to become cheater <b>pro max</b>.Success will automatically touch your feet!</P>
+</section> 
 </body>
 <!-- this div is for the buttons -->
        
