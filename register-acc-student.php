@@ -3,7 +3,7 @@
 <?php 
 
     //checking duplication
-    $q1 = mysqli_query($con, "SELECT `id` FROM `student` WHERE `email` = '".$_REQUEST['email']."'");
+    $q1 = mysqli_query($con, "SELECT `id` FROM `student` WHERE `email` = '".$_REQUEST['email']."' UNION SELECT `id` FROM `teacher` WHERE `email` = '".$_REQUEST['email']."'");
     $num = mysqli_num_rows($q1);
     if($num == 0) {
 
@@ -22,7 +22,8 @@
         }
     }
     else {
-        echo "Email already existed, Please try to login.";
+        // echo "Email already existed, Please try to login.";
+        header('location: register-student.php?status=Email already existed, Please try to login.');
     }
 
 ?>

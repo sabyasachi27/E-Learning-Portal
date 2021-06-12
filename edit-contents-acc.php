@@ -22,7 +22,7 @@ $q2 = mysqli_query($con, $qr1);
 $topic= mysqli_fetch_array($q2);
 
     echo ''.$topic['id'];
-    $qry = "INSERT INTO `contents` VALUES (NULL, '".$topic['id']."', '".$_REQUEST['heading']."', '".$_REQUEST['type']."', '".$_REQUEST['links']."', '".$_REQUEST['content']."', '".$teacher['name']."', '".date("Y-m-d H:i:s")."', '".date("Y-m-d H:i:s")."',  'active')";
+    $qry = "INSERT INTO `contents` VALUES (NULL, '".$_REQUEST['topicId']."', '".$_REQUEST['heading']."', '".$_REQUEST['type']."', '".$_REQUEST['links']."', '".$_REQUEST['content']."', '".$teacher['name']."', '".date("Y-m-d H:i:s")."', '".date("Y-m-d H:i:s")."',  'active')";
 
     $qry_exec = mysqli_query($con, $qry);
 

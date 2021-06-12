@@ -85,6 +85,13 @@ body{
 			
 			<button class="btn"><b>Register</b></button>
 		</form>
+		<p style="color: red;">
+			<?php
+				if(isset($_REQUEST['status'])) {
+					echo $_REQUEST['status'];
+				}
+			?>
+		</p>
 	</div>
 	<script>
 		function validateForm()
