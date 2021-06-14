@@ -10,7 +10,7 @@
         //running query for inserting data
         $qry = "INSERT INTO `student` VALUES (NULL, '".$_REQUEST['name']."', '".$_REQUEST['email']."', '".$_REQUEST['password']."', '".$_REQUEST['mobile']."', 'active')";
         $qry_exec = mysqli_query($con, $qry);
-        echo $qry;
+        
         if($qry_exec)
         {
             echo "Register Successful";
