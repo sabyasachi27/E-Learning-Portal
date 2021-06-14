@@ -69,8 +69,8 @@
       <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><b>Register</b><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="register-student.php">Learner</a></li>
-            <li><a href="register-teacher.php">Teacher</a></li>
+            <li><a href="student/register-student.php">Learner</a></li>
+            <li><a href="teacher/register-teacher.php">Teacher</a></li>
           </ul>
         </li>  
         <li><p class="navbar-text">Already have an account?</p></li>

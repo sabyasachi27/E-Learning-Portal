@@ -1,4 +1,4 @@
-<?php include_once "connection.php"; ?>
+<?php include_once "./connection.php"; ?>
 <?php
 	
 	session_start();
@@ -58,10 +58,10 @@ while($row = mysqli_fetch_array($qry1)) {
 		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
 		echo "<td>".$row['user_id']."</td>";
-		echo "<td><a href=contents.php?name=>".$row['name']."</a></td>";
-		echo "<td><a href=delete-topic.php?id=".$row['id']."'>Delete</a></td>";
-		echo "<td><a href=update-topic.php?id=".$row['id']."'>Update</a></td>";
-		echo "<td><a href=edit-contents.php?id=".$row['id']."'>Edit</a></td>";
+		echo "<td><a href=.\contents.php?name=>".$row['name']."</a></td>";
+		echo "<td><a href=.\delete-topic.php?id=".$row['id']."'>Delete</a></td>";
+		echo "<td><a href=.\update-topic.php?id=".$row['id']."'>Update</a></td>";
+		echo "<td><a href=.\edit-contents.php?id=".$row['id']."'>Edit</a></td>";
 	echo "</tr>";
 }
 else {
@@ -76,4 +76,4 @@ else {
 
 <br>
 <br>
-<a href="logout.php">Logout</a>
+<a href="./logout.php">Logout</a>

@@ -1,4 +1,4 @@
-<?php include_once "connection.php"; ?>
+<?php include_once "./connection.php"; ?>
 
 <?php
 
@@ -14,7 +14,7 @@
         if($qry_exec)
         {
             echo "Register Successful";
-            header('location: loginAs.php');
+            header('location: ./loginAs.php');
         }
         else    
         {

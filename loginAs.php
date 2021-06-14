@@ -22,9 +22,9 @@
 
 <h1>Login As:</h1>
 
-<button action = "login-student.php" class="button button1"><a href = "login-student.php">Learner</a></button>
+<button action = "login-student.php" class="button button1"><a href = "student/login-student.php">Learner</a></button>
 
-<button action = "login-teacher.php" class="button button2"><a href = "login-teacher.php">Teacher</a></button>
+<button action = "login-teacher.php" class="button button2"><a href = "teacher/login-teacher.php">Teacher</a></button>
 
 </body>
 </html>
