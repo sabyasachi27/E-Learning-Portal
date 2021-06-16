@@ -1,4 +1,4 @@
-<?php include_once "./connection.php"; ?>
+<?php include_once "../connection.php"; ?>
 <?php
 	
 	session_start();
@@ -45,11 +45,11 @@ while($row = mysqli_fetch_array($qry1)) {
 
 
 	echo "<tr>";
-		echo "<td><a href=./contents.php?name=>".$row['name']."</a></td>";
+		echo "<td><a href=../contents.php?name=>".$row['name']."</a></td>";
 	echo "</tr>";
 }
 ?>
 
 <br>
 <br>
-<a href="./logout.php">Logout</a>
+<a href="../logout.php">Logout</a>
