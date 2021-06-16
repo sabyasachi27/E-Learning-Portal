@@ -88,17 +88,24 @@
                                 or
 								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <label class="sr-only" for="exampleInputEmail2" name="email">Email address</label>
 											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
 										</div>
 										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+											 <label class="sr-only" for="exampleInputPassword2" name ="password">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2"  placeholder="Password" required>
                                              <div class="help-block text-right"><a href="">Forget the password ?</a></div>
 										</div>
 										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+											 <button type="submit" class="btn btn-primary btn-block"><a href= "login-acc.php">Sign in</a></button>
 										</div>
+                    <div style="color: red;">
+			              <?php
+				                if(isset($_REQUEST['status'])) {
+					              echo $_REQUEST['status'];
+				                }
+			              ?>
+		                </div>
 										<div class="checkbox">
 											 <label>
 											 <input type="checkbox"> keep me logged-in
@@ -124,6 +131,14 @@
 </section> 
 </body>
 <!-- this div is for the buttons -->
+                  <p style="color: red;">
+			              <?php
+				                if(isset($_REQUEST['status'])) {
+					              echo $_REQUEST['status'];
+                        echo $_REQUEST[$q1];
+				                }
+			              ?>
+		                </p>
        
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
             <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->

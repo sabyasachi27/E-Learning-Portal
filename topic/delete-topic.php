@@ -9,7 +9,7 @@
 
 	if ($qry) {
 		// echo "successfully Deleted";
-		header('location: profile-teacher.php');
+		header('location: #');
 	} else {
 		echo "Failed";
 	}

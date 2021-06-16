@@ -3,7 +3,7 @@
 	
 	session_start();
 	if (!isset($_SESSION['id'])) {
-		header('location: loginAs.php');
+		header('location: index.php');
 	}
 ?>
 <?php 
@@ -12,6 +12,6 @@
 
 	session_destroy();
 
-	header('location: loginAs.php');
+	header('location: index.php');
 
  ?>

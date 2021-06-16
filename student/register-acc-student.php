@@ -13,6 +13,13 @@
         
         if($qry_exec)
         {
+            $qry1=mysqli_query($con, "SELECT `id` FROM `student` WHERE `email` = '".$_REQUEST['email']."'");
+            session_start();
+
+		$user = mysqli_fetch_array($qry1);
+		// print_r($user);
+		$_SESSION['id'] = $num['id'];
+
             echo "Register Successful";
             header('location: stud-profile.php');
         }

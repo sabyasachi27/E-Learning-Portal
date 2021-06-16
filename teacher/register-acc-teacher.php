@@ -14,7 +14,7 @@
         if($qry_exec)
         {
             echo "Register Successful";
-            header('location: ./loginAs.php');
+            header('location: ../loginAs.php');
         }
         else    
         {
