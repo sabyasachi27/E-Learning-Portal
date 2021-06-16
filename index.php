@@ -86,7 +86,7 @@
 									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 								</div>
                                 or
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+								 <form class="form" role="form" method="post" action="login-acc.php" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputEmail2" name="email">Email address</label>
 											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
@@ -97,7 +97,7 @@
                                              <div class="help-block text-right"><a href="">Forget the password ?</a></div>
 										</div>
 										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block"><a href= "login-acc.php">Sign in</a></button>
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
 										</div>
                     <div style="color: red;">
 			              <?php
