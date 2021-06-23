@@ -3,7 +3,7 @@
 	
 	session_start();
 	if (!isset($_SESSION['id'])) {
-		header('location: login-teacher.php');
+		header('location: #');
 	}
 ?>
 
@@ -22,7 +22,7 @@ $qry_exec = mysqli_query($con, $qry);
         {
             
         
-            header('location: edit-contents.php');
+            header('location: #');
             echo "Successfully inserted the topic ";
         }
         else

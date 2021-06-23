@@ -1,3 +1,11 @@
+<?php include_once "../connection.php"; ?>
+<?php
+	
+	session_start();
+	if (!isset($_SESSION['id'])) {
+		header('location: ../index.php');
+	}
+?>
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#" style="height: 100%;">
 
@@ -70,11 +78,32 @@
       <img src="../img/man.png">
     </div>
     <div class="menu">
-      <ul>
+      <!-- <ul>
         <li><i class="fa fa-envelope-o"></i><a href="#">Dashboard</a></li>
         <li><i class="fa fa-pencil-square-o"></i><a href="edit-profile.php">Edit Profile</a></li>
         <li><i class="fa fa-sign-out"></i><a href="../index.php">Logout</a></li>
-      </ul>  
+      </ul>   -->
+    <?php
+	
+	$qr = 	"SELECT 
+				*
+			FROM 
+				`student`
+			WHERE 
+				`id` = ".$_SESSION['id'];
+
+	$q1 = mysqli_query($con, $qr);
+ 
+
+	$student= mysqli_fetch_array($q1);
+ // echo $student['id'];
+  echo "<ul>";
+  echo '<li><i class="fa fa-envelope-o"></i><a href="student-dashboard.php">Dashboard</a></li>';
+  echo '<li><i class="fa fa-pencil-square-o"></i><a href="edit-profile.php">Edit Profile</a></li>';
+  echo '<li><i class="fa fa-sign-out"></i><a href="../logout.php">Logout</a></li>';
+echo "</ul>";
+  ?>
+  
     </div> 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -93,7 +122,33 @@
 </script>  
 </body>
 <!-- this div is for the buttons -->
-       
+
+
+<?php
+	
+	$qr = 	"SELECT 
+				*
+			FROM 
+				`student`
+			WHERE 
+				`id` = ".$_SESSION['id'];
+
+	$q1 = mysqli_query($con, $qr);
+
+	$student= mysqli_fetch_array($q1);
+    //echo ''.$qr;
+
+	 echo 'Welcome to your profile '.$student['name'];
+	 echo '<br>';
+
+	 echo 'Email: '.$student['email']; 
+	 echo '<br>';
+
+	 
+
+     echo "Login Success";
+
+?>
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
             <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->
         
