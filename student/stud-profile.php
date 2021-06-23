@@ -78,11 +78,28 @@
       <img src="../img/man.png">
     </div>
     <div class="menu">
-      <ul>
-        <li><i class="fa fa-envelope-o"></i><a href="student-dashboard.php">Dashboard</a></li>
-        <li><i class="fa fa-pencil-square-o"></i><a href="edit-profile.php">Edit Profile</a></li>
-        <li><i class="fa fa-sign-out"></i><a href="../logout.php">Logout</a></li>
-      </ul>  
+    <?php
+	
+	$qr = 	"SELECT 
+				*
+			FROM 
+				`student`
+			WHERE 
+				`id` = ".$_SESSION['id'];
+
+	$q1 = mysqli_query($con, $qr);
+ 
+
+	$student= mysqli_fetch_array($q1);
+ // echo $student['id'];
+  echo "<ul>";
+  echo "<li><i class="fa fa-envelope-o"></i><a href="student-dashboard.php">Dashboard</a></li>";
+  echo "<li><i class="fa fa-pencil-square-o"></i><a href="edit-profile.php">Edit Profile</a></li>";
+  echo "<li><i class="fa fa-sign-out"></i><a href="../logout.php">Logout</a></li>";
+echo "</ul>";
+  ?>
+      
+      
     </div> 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -115,7 +132,7 @@
 	$q1 = mysqli_query($con, $qr);
 
 	$student= mysqli_fetch_array($q1);
-    echo ''.$qr;
+    //echo ''.$qr;
 
 	 echo 'Welcome to your profile '.$student['name'];
 	 echo '<br>';

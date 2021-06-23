@@ -14,7 +14,7 @@
 
 		$user = mysqli_fetch_array($q1);
 		// print_r($user);die();
-        //if($user['id'] isfrom)
+		
 		$_SESSION['id'] = $user['id'];
 
 		if (isset($user['student_email'])) {
