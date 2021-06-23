@@ -73,7 +73,7 @@
       <ul>
         <li><i class="fa fa-envelope-o"></i><a href="#">Dashboard</a></li>
         <li><i class="fa fa-pencil-square-o"></i><a href="edit-profile.php">Edit Profile</a></li>
-        <li><i class="fa fa-sign-out"></i><a href="after-logout.php">Logout</a></li>
+        <li><i class="fa fa-sign-out"></i><a href="../index.php">Logout</a></li>
       </ul>  
     </div> 
     </div><!-- /.navbar-collapse -->

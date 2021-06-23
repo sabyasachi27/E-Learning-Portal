@@ -38,7 +38,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">E Learning Portal</a>
+      <a class="navbar-brand" href="index.php">StudyLand</a>
     </div>
  
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -117,10 +117,16 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<section id="home">
-<h1>Welcome to our site</h1>
-<p>Do you get caught everytime you try to cheat? Then don't worry you are in the right place.</p> 
-<p>We give our students the best training which will help then to become cheater <b>pro max</b>.Success will automatically touch your feet!</P>
+
+<!-- ======Start of Home Section====== -->
+<section id="home" class="d-flex align-items-center">
+<div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>StudyLand</span></h1>
+      <h2>Education is the most powerful weapon which you can use to change the world</h2>
+      <div class="d-flex">
+        <a href="#" class="btn-get-started">Get Started</a>
+      </div>
+    </div>
 </section> 
 </body>
 <!-- this div is for the buttons -->
