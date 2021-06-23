@@ -98,9 +98,9 @@
 	$student= mysqli_fetch_array($q1);
  // echo $student['id'];
   echo "<ul>";
-  echo '<li><i class="fa fa-envelope-o"></i><a href="student-dashboard.php">Dashboard</a></li>';
-  echo '<li><i class="fa fa-pencil-square-o"></i><a href="edit-profile.php">Edit Profile</a></li>';
-  echo '<li><i class="fa fa-sign-out"></i><a href="../logout.php">Logout</a></li>';
+  echo "<li><i class='fa fa-envelope-o'></i><a href=student-dashboard.php?id=".$student['id'].">Dashboard</a></li>";
+  echo "<li><i class='fa fa-pencil-square-o'></i><a href=edit-profile.php?id=".$student['id'].">Edit Profile</a></li>";
+  echo "<li><i class='fa fa-sign-out'></i><a href=../logout.php?id=".$student['id'].">Logout</a></li>";
 echo "</ul>";
   ?>
   
