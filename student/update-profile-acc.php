@@ -3,7 +3,7 @@
 <?php
 
 	// running a query
-	print_r($_REQUEST['name']);die();
+	//print_r($_REQUEST['id']);die();
 	$qry = "UPDATE `student` SET `name` = '".$_REQUEST['name']."', `email` = '".$_REQUEST['email']."', `mobnumber` = '".$_REQUEST['phno']."'  WHERE `id` = ".$_REQUEST['id'];
 	$qry_exec = mysqli_query($con, $qry);
 
