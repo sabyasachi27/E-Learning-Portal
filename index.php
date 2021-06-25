@@ -136,15 +136,16 @@
     </div>
 </section> 
 </body>
+
+                <p style="color: red;">
+			            <?php
+				              if(isset($_REQUEST['status'])) {
+					            echo $_REQUEST['status'];
+                      // echo $_REQUEST[$q1];
+				              }
+			            ?>
+		            </p>
 <!-- this div is for the buttons -->
-                  <p style="color: red;">
-			              <?php
-				                if(isset($_REQUEST['status'])) {
-					              echo $_REQUEST['status'];
-                        // echo $_REQUEST[$q1];
-				                }
-			              ?>
-		                </p>
        
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
             <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->

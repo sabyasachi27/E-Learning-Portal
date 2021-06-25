@@ -10,20 +10,27 @@
         //running query for inserting data
         $qry = "INSERT INTO `teacher` VALUES (NULL, '".$_REQUEST['name']."', '".$_REQUEST['email']."', '".$_REQUEST['password']."', '".$_REQUEST['mobile']."', 'active')";
         $qry_exec = mysqli_query($con, $qry);
-
+        
         if($qry_exec)
         {
+            $qry1=mysqli_query($con, "SELECT `id` FROM `teacher` WHERE `email` = '".$_REQUEST['email']."'");
+            session_start();
+
+		$user = mysqli_fetch_array($qry1);
+		// print_r($user);
+		$_SESSION['id'] = $num['id'];
+
             echo "Register Successful";
-            header('location: ../loginAs.php');
+            header('location: profile-teacher.php');
         }
-        else    
+        else
         {
-            echo "register unccessful";
+            echo "Register Unsuccessful";
         }
     }
     else {
-        echo "Email already existed, Please try to login.";
+        // echo "Email already existed, Please try to login.";
+        header('location: register-teacher.php?status=Email already existed, Please try to login.');
     }
-    
 
 ?>

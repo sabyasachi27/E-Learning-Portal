@@ -22,13 +22,13 @@ body{
 .container h1{
 	display: inline-block;
 	font-size: 40px;
-	border-bottom: 5px solid purple;
+	border-bottom: 5px solid rgb(27, 37, 27);
 	margin-bottom: 34px;
 	padding: 12px 0;
 }
 .box{
 	width: 100%;
-	border-bottom: 2px solid purple;
+	border-bottom: 2px solid rgb(27, 37, 27);
 	margin: 22px 0px;
 }
 .box input{
@@ -45,7 +45,7 @@ body{
 	outline: none;
 	margin: 12px 0;
 	padding: 8px 14px;
-	border: 2px solid purple;
+	border: 2px solid rgb(27, 37, 27);
 	border-radius: 10px;
 	font-size:18px;
 	background: none;

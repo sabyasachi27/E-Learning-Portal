@@ -88,9 +88,10 @@
    #home .container{
     padding-top: 80px;
 }
-@media (min-width: 1024px)
-#home{
-    background-attachment: fixed;
+@media (min-width: 1024px){
+    #home{
+        background-attachment: fixed;
+    }
 }
 .navbar{
     margin-bottom: 0px;

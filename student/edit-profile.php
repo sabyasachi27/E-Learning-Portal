@@ -34,10 +34,10 @@
                 <input type="text" name="name" placeholder="Enter Your Name"><?=$row['name']?>
                 <input type="email" name="email" placeholder="Enter Your Email"><?=$row['email']?>
                 <input type="text" name="phno" placeholder="Enter Your phone no."><?=$row['mobnumber']?>
-            
-            <button type= "cancel" style="float:left; margin:10px 0 0 18.2%;" onclick="location.href='stud-profile.php';return false;">BACK</button>
-            <button type="submit" value="submit"style="float:right; margin:10px 18.2% 0 0;" >UPDATE</button>
             </div>
+            <button type= "cancel" style="float:left; margin:10px 0 0 18.2%;" onclick="location.href='stud-profile.php';return false;">BACK</button>
+            <button type="submit" value="submit"style="float:right; margin:10px 18.2% 0 0;">UPDATE</button>
+            
         </div>
     </form>
     </center>
