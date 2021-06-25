@@ -21,7 +21,7 @@
 			// echo 'redirect to student profile';
 			header('location: student/stud-profile.php');
 		} else if (isset($user['teacher_email'])) {
-			echo 'redirect to teacher profile';
+			header('location: teacher/teacher-profile.php');	
 		}
 		// header('location: student/stud-profile.php');
 		// echo "Login successful";

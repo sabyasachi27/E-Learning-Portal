@@ -21,7 +21,7 @@
 		$_SESSION['id'] = $num['id'];
 
             echo "Register Successful";
-            header('location: profile-teacher.php');
+            header('location: teacher-profile.php');
         }
         else
         {

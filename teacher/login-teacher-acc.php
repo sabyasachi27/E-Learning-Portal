@@ -1,4 +1,4 @@
-<?php include_once "./connection.php"; ?>
+<?php include_once "../connection.php"; ?>
 
 <?php
 
@@ -15,7 +15,7 @@
 		// print_r($user);
 		$_SESSION['id'] = $user['id'];
 
-		header('location: profile-teacher.php');
+		header('location: teacher-profile.php');
 		echo "Login successful";
 
 	} else {

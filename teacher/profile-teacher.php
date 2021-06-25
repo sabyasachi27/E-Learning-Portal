@@ -26,8 +26,6 @@
 	 echo 'Email: '.$teacher['email']; 
 	 echo '<br>';
 
-	 
-
      echo "Login Success";
 
 ?>
