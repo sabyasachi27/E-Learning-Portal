@@ -135,7 +135,7 @@ echo "</ul>";
 
 	$q1 = mysqli_query($con, $qr);
 
-	$student= mysqli_fetch_array($q1);
+	$teacher= mysqli_fetch_array($q1);
     //echo ''.$qr;
 
 	 echo 'Welcome to your profile '.$teacher['name'];

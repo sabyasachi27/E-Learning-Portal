@@ -31,9 +31,9 @@
             <label for="file">EDIT PIC</label>
             <div class="form">
 
-                <input type="text" name="name" placeholder="Enter Your Name"><?=$row['name']?>
-                <input type="email" name="email" placeholder="Enter Your Email"><?=$row['email']?>
-                <input type="text" name="phno" placeholder="Enter Your phone no."><?=$row['mobnumber']?>
+                <input type="text" name="name" placeholder="Enter Your Name" value="<?php echo $row['name']?>"><?=$row['name']?>
+                <input type="email" name="email" placeholder="Enter Your Email" value="<?php echo ''.$row['email'];?>">><?=$row['email']?>
+                <input type="text" name="phno" placeholder="Enter Your phone no." value="<?php echo ''.$row['mobnumber'];?>">><?=$row['mobnumber']?>
             </div>
             <button type= "cancel" style="float:left; margin:10px 0 0 18.2%;" onclick="location.href='stud-profile.php';return false;">BACK</button>
             <button type="submit" value="submit"style="float:right; margin:10px 18.2% 0 0;">UPDATE</button>
