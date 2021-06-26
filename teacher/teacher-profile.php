@@ -75,7 +75,7 @@
       </form>
       <div class="action">
     <div class="profile" onclick="menuToggle();">
-      <img src="../img/man.png">
+      <img src="../img/man.png" style="width: 50px;">
     </div>
     <div class="menu">
       <!-- <ul>
@@ -95,7 +95,7 @@
 	$q1 = mysqli_query($con, $qr);
  
 
-	$student= mysqli_fetch_array($q1);
+	$teacher= mysqli_fetch_array($q1);
  
   echo "<ul>";
   echo "<li><i class='fa fa-envelope-o'></i><a href=student-dashboard.php?id=".$teacher['id'].">Dashboard</a></li>";

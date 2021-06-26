@@ -4,8 +4,18 @@
 
 
 	// checking for existing email
-	$q1 = mysqli_query($con, "SELECT `id`, `email` AS `student_email` FROM `student` WHERE `email` = '".$_REQUEST['email']."' AND `password` = '".$_REQUEST['password']."' UNION SELECT `id`,`email` AS `teacher_email` FROM `teacher` WHERE `email` = '".$_REQUEST['email']."' AND `password` = '".$_REQUEST['password']."'");
+
+	// getting student data
+	$role = 'student';
+	$q1 = mysqli_query($con, "SELECT `id`, `email` AS `student_email` FROM `student` WHERE `email` = '".$_REQUEST['email']."' AND `password` = '".$_REQUEST['password']."'");
 	$num = mysqli_num_rows($q1);
+
+	if ($num === 0) {
+		// getting teacher data
+		$role = 'teacher';
+		$q1 = mysqli_query($con, "SELECT `id`,`email` AS `teacher_email` FROM `teacher` WHERE `email` = '".$_REQUEST['email']."' AND `password` = '".$_REQUEST['password']."'");
+		$num = mysqli_num_rows($q1);
+	}
 
 	if ($num === 1) {
 		
@@ -17,10 +27,10 @@
 		
 		$_SESSION['id'] = $user['id'];
 
-		if (isset($user['student_email'])) {
+		if ($role === 'student') {
 			// echo 'redirect to student profile';
 			header('location: student/stud-profile.php');
-		} else if (isset($user['teacher_email'])) {
+		} else if ($role === 'teacher') {
 			header('location: teacher/teacher-profile.php');	
 		}
 		// header('location: student/stud-profile.php');
