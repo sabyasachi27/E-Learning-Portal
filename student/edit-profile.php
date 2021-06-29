@@ -28,7 +28,9 @@
         <div class="box">
             <img src="../img/man.png" alt="Profile Pic">
             <input type="file" name="" id="file" accept="image/*">
-            <label for="file">EDIT PIC</label>
+            <div class="editpic">
+                <label for="file">EDIT PIC</label>
+            </div>
             <div class="form">
 
                 <input type="text" name="name" placeholder="Enter Your Name" value="<?php echo $row['name']?>"><?=$row['name']?>

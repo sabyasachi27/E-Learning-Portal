@@ -32,7 +32,7 @@
     <script async="" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <title>Only Studies | Learning Platform</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="profile-style.css">
+    <link rel="stylesheet" href="teacher-profile.css">
 </head>
 
 <body>
@@ -75,7 +75,7 @@
       </form>
       <div class="action">
     <div class="profile" onclick="menuToggle();">
-      <img src="../img/man.png" style="width: 50px;">
+      <img src="../img/man.png">
     </div>
     <div class="menu">
       <!-- <ul>
@@ -98,7 +98,7 @@
 	$teacher= mysqli_fetch_array($q1);
  
   echo "<ul>";
-  echo "<li><i class='fa fa-envelope-o'></i><a href=student-dashboard.php?id=".$teacher['id'].">Dashboard</a></li>";
+  echo "<li><i class='fa fa-envelope-o'></i><a href=teacher-dashboard.php?id=".$teacher['id'].">Dashboard</a></li>";
   echo "<li><i class='fa fa-pencil-square-o'></i><a href=edit-profile.php?id=".$teacher['id'].">Edit Profile</a></li>";
   echo "<li><i class='fa fa-sign-out'></i><a href=../logout.php?id=".$teacher['id'].">Logout</a></li>";
 echo "</ul>";
@@ -143,6 +143,8 @@ echo "</ul>";
 
 	 echo 'Email: '.$teacher['email']; 
 	 echo '<br>';
+
+	 
 
      echo "Login Success";
 

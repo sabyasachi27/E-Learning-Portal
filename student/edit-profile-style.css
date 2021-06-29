@@ -8,27 +8,29 @@ body{
 }
 .box{
     box-sizing: border-box;
-    width: 153px;
-    height: 153px;
+    width: 360px;
+    height: 600px;
     border: 2px solid #3498db;
     box-shadow: -3px -3px 7px #ffffff73,
                  3px 3px 5px rgba(94, 104, 121, 0.288);
-    border-radius: 50%;
+    border-radius: 5px;
     background-color: black;
     margin-top: 50px;
     overflow: hidden; 
-    transition: all 1s;
+    /* transition: all 1s; */
 }
 img{
     box-sizing: border-box;
-    width: 149px;
-    height: 149px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin: 0;
     padding: 3px;
     border: 5px solid #0082e6;
     background-color: white;
-    transition: all 1s;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    /* transition: all 1s; */
 }
 
 input[type="text"]{
@@ -76,6 +78,7 @@ button{
 }
 button:hover{
     transform:scale(1.1);
+    cursor: pointer;
 }
 input[type="file"]{
     display: none;
@@ -94,7 +97,7 @@ label:hover{
     background-color: #3498db;
     color: black;
 }
-.box:hover{
+/* .box:hover{
     width: 360px;
     height: 600px;
     border-radius: 5px;
@@ -103,7 +106,7 @@ label:hover{
     width: 100px;
     height: 100px;
     margin: 20px 31%;
-}
+} */
 .form{
     margin-top: 70px;
 }
