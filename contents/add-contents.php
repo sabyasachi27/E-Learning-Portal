@@ -2,7 +2,7 @@
 
 
 <?php
-	$qry1 = mysqli_query($con, "SELECT * FROM `topic` WHERE `status` = 'active'");
+	$qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `status` = 'active'");
 ?>
 
 

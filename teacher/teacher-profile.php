@@ -122,7 +122,18 @@ echo "</ul>";
 </script>  
 </body>
 <!-- this div is for the buttons -->
-
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>user id</th>
+		<th>Course Name</th>
+    <th>Course Description</th>
+    <th>Course Type</th>
+    <th>Course Fee</th>
+		<th>Delete</th>
+		<th>Update</th>
+		<th>Edit Contents</th>
+	</tr>
 
 <?php
 	
@@ -148,7 +159,34 @@ echo "</ul>";
 
      echo "Login Success";
 
+     $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `status` = 'active'");
+
+while($row = mysqli_fetch_array($qry1)) {
+	
+	if($teacher['id'] === $row['user_id']){
+		echo "<tr>";
+		echo "<td>".$row['id']."</td>";
+		echo "<td>".$row['user_id']."</td>";
+		echo "<td><a href=../contents/contents.php?name=>".$row['name']."</a></td>";
+    echo "<td>".$row['description']."</td>";
+    echo "<td>".$row['type']."</td>";
+    echo "<td>".$row['fee']."</td>";
+		echo "<td><a href=../course/delete-course.php?id=".$row['id']."'>Delete</a></td>";
+		echo "<td><a href=../course/update-corse.php?id=".$row['id']."'>Update</a></td>";
+		echo "<td><a href=edit-../contents/update-contents.php?id=".$row['id']."'>Edit</a></td>";
+	echo "</tr>";
+}
+else {
+	echo "Please Insert your contents . Currently you don't have any contents";
+}
+
+	}
+
+  
+
 ?>
+
+<a href="../course/insert-course.php">Add</a>
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
             <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->
         
