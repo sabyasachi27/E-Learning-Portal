@@ -158,8 +158,9 @@ echo "</ul>";
      echo "Login Success";
 
      $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `status` = 'active'");
-
+     //print_r($qry1);
 while($row = mysqli_fetch_array($qry1)) {
+  
 	
 	if($teacher['id'] === $row['user_id']){
 		echo "<tr>";
@@ -168,14 +169,14 @@ while($row = mysqli_fetch_array($qry1)) {
 		echo "<td><a href=../contents/contents.php?name=>".$row['name']."</a></td>";
     echo "<td>".$row['description']."</td>";
     echo "<td>".$row['type']."</td>";
-    echo "<td>".$row['fee']."</td>";
+    echo "<td>".$row['coursefee']."</td>";
 		echo "<td><a href=../course/delete-course.php?id=".$row['id']."'>Delete</a></td>";
 		echo "<td><a href=../course/update-corse.php?id=".$row['id']."'>Update</a></td>";
-		echo "<td><a href=edit-../contents/update-contents.php?id=".$row['id']."'>Edit</a></td>";
+		echo "<td><a href=../contents/update-contents.php?id=".$row['id']."'>Edit</a></td>";
 	echo "</tr>";
 }
 else {
-	echo "Please Insert your contents . Currently you don't have any contents";
+	echo "<br><br>Please Insert your contents . Currently you don't have any contents";
 }
 
 	}
@@ -183,7 +184,7 @@ else {
   
 
 ?>
-
+<br><br>
 <a href="../course/insert-course.php">Add</a>
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
             <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->
