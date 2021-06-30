@@ -119,6 +119,9 @@
   height: 40px;
   border-radius: 5px;
   transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .back-to-top i {
