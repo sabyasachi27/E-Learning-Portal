@@ -132,7 +132,7 @@ echo "</ul>";
     <th>Course Fee</th>
 		<th>Delete</th>
 		<th>Update</th>
-		<th>Edit Contents</th>
+		
 	</tr>
 
 <?php
@@ -166,13 +166,13 @@ while($row = mysqli_fetch_array($qry1)) {
 		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
 		echo "<td>".$row['user_id']."</td>";
-		echo "<td><a href=../contents/contents.php?name=>".$row['name']."</a></td>";
+		echo "<td><a href=../contents/contents.php?id=".$row['id'].">".$row['name']."</a></td>";
     echo "<td>".$row['description']."</td>";
     echo "<td>".$row['type']."</td>";
     echo "<td>".$row['coursefee']."</td>";
-		echo "<td><a href=../course/delete-course.php?id=".$row['id']."'>Delete</a></td>";
-		echo "<td><a href=../course/update-corse.php?id=".$row['id']."'>Update</a></td>";
-		echo "<td><a href=../contents/update-contents.php?id=".$row['id']."'>Edit</a></td>";
+		echo "<td><a href=../course/delete-course.php?id=".$row['id'].">Delete</a></td>";
+		echo "<td><a href=../course/update-course.php?id=".$row['id'].">Update</a></td>";
+		//echo "<td><a href=../contents/update-contents.php?id=".$row['id'].">Edit</a></td>";
 	echo "</tr>";
 }
 else {
