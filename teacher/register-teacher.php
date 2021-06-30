@@ -10,7 +10,7 @@
 	padding: 0;
 }
 body{
-	background: url(../img/teacher-bg.jpg) no-repeat center center fixed;
+	background: url(../assets/img/teacher-bg.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 .container{

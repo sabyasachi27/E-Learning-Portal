@@ -47,8 +47,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -173,7 +173,7 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <h4 class="title"><a href="">Score higher</a></h4>
-              <p class="description">teacher ka muh me loo aur apna khol ke khada ho jao, hum guarantee dete hai teacher tumhare ghar me aakar tumhe marks deke jaega</p>
+              <p class="description">We provide you the guarantee of scoring higher, We have best teachers available and they will make you enjoy learning </p>
             </div>
           </div>
 
@@ -229,8 +229,204 @@
       </div>
     </section><!-- End About Section -->
 
-</main>
+    <!-- ======= Popular Courses Section ======= -->
+    <section id="popular-courses" class="courses">
+          <div class="container" data-aos="fade-up">
 
+            <div class="section-title">
+              <p class="course-heading">Popular Courses</p>
+            </div>
+
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="course-item">
+                  <img src="img/course-1.jpg" class="img-fluid" alt="...">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h4>Web Development</h4>
+                      <p class="price">$170</p>
+                    </div>
+
+                    <h3><a href="course-details.html">Website Design</a></h3>
+                    <p>Web design encompasses with many different skills and disciplines in the production and maintenance of websites.</p>
+                  </div>
+                </div>
+              </div> <!-- End Course Item-->
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="course-item">
+                  <img src="img/course-2.jpg" class="img-fluid" alt="...">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h4>Python</h4>
+                      <p class="price">$240</p>
+                    </div>
+
+                    <h3><a href="course-details.html">Python programming</a></h3>
+                    <p>Python is a interpreted high-level programming language that lets you work quickly and integrate systems more effectively.</p>
+                   
+                  </div>
+                </div>
+              </div> <!-- End Course Item-->
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="course-item">
+                  <img src="img/course-3.jpg" class="img-fluid" alt="...">
+                  <div class="course-content">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h4>Java</h4>
+                      <p class="price">$200</p>
+                    </div>
+
+                    <h3><a href="course-details.html">Java programming</a></h3>
+                    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+                    
+                  </div>
+                </div>
+              </div> <!-- End Course Item-->
+            </div>
+          </div>
+        </section><!-- End Popular Courses Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Us</span></h3>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+            <i class="fa fa-map-marker"></i>
+              <h3>Our Address</h3>
+              <p>Diamond Harbour Rd,Thakurpukur, Kolkata-700063</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+            <i class="fa fa-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+            <i class="fa fa-phone"></i>
+              <h3>Call Us</h3>
+              <p>+91 9876543210</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.058975331527!2d88.30559331490886!3d22.46441798523857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027a8bc7db49ed%3A0xf7ab6bbe6079d673!2sVivekananda%20College!5e0!3m2!1sen!2sin!4v1624975763630!5m2!1sen!2sin" frameborder="0" width="100%" height="384px" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          <div class="col-lg-6">
+            <form action="#" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End main Section -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>StudyLand</h3>
+          <p>
+            Diamond Harbour Rd, Thakurpukur <br>
+            Kolkata-700063<br>
+            West Bengal <br><br>
+            <strong>Phone:</strong> +91 9876543210 <br>
+            <strong>Email:</strong> contact@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Home</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">About us</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Course</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Terms of service</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Programming</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Web Development</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">SCC Exams</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">NEET UG</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Now you can join us on social media platforms to stay updated to our latest news</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>StudyLand</span></strong>. All Rights Reserved
+    </div>
+  </div>
+  </footer><!-- End Footer -->
+
+  <!-- <div id="preloader"></div> -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-angle-up"></i></a>
+  
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 </body>
 
                 <p style="color: red;">
