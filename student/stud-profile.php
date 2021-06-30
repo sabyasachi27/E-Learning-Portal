@@ -75,7 +75,7 @@
       </form>
       <div class="action">
     <div class="profile" onclick="menuToggle();">
-      <img src="../img/man.png">
+      <img src="../assets/img/man.png">
     </div>
     <div class="menu">
       <!-- <ul>
