@@ -1,4 +1,4 @@
-<?php include_once "connection.php"; ?>
+<?php include_once "../connection.php"; ?>
 
 
 <?php
@@ -13,7 +13,7 @@
 </head>
 <body> 
 
-	<form action="edit-contents-acc.php" method="post">
+	<form action="add-contents-acc.php" method="post">
 		Topic: 
 		<select name="topicId">
 			<option value="">Select a topic</option>
