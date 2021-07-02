@@ -11,7 +11,6 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="200">
     <meta property="og:image:height" content="200">
-  
     <!-- Bootstrap CSS -->
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
     <!-- Font Awesome CSS -->
@@ -24,9 +23,13 @@
     <script async="" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <title>Only Studies | Learning Platform</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-
+<style>
+  .related-course{
+    background-color:rgb(250, 249, 249);
+  }
+</style>
 <body>
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -125,120 +128,71 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<!-- ======Start of Home Section====== -->
-<section id="home" class="d-flex align-items-center">
-<div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>StudyLand</span></h1>
-      <h2>Education is the most powerful weapon which you can use to change the world</h2>
-      <div class="d-flex">
-        <a href="#" class="btn-get-started">Get Started</a>
-      </div>
-    </div>
-</section> 
-
 <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">Daily live classes</a></h4>
-              <p class="description">You can chat with educators, ask them questions, answer live polls, and get your doubts cleared-
-                all while the class is going on
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <h4 class="title"><a href="">Practice and revise</a></h4>
-              <p class="description">Learning isn't just limited to classes with our practice section,
-                 mock tests and lecture notes shared as PDFs for your revision</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <h4 class="title"><a href="">Learn anytime, anywhere</a></h4>
-              <p class="description">One subscription gets you access to all our live and recorded classes to watch from the comfort of any of your devices</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <h4 class="title"><a href="">Score higher</a></h4>
-              <p class="description">We provide you the guarantee of scoring higher, We have best teachers available and they will make you enjoy learning </p>
-            </div>
-          </div>
-
-        </div>
-
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Course Details</h2>
+        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
       </div>
-    </section><!-- End Featured Services Section -->
+    </div><!-- End Breadcrumbs -->
 
-     <!-- ======= About Section ======= -->
-     <section id="about" class="about section-bg">
+    <!-- ======= Cource Details Section ======= -->
+    <section id="course-details" class="course-details">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>About</h2>
-          <h3>Find Out More <span>About Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li>
-                <i class="bx bx-store-alt"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bx-images"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-            </ul>
+          <div class="course-details col-lg-8">
+            <img src="../assets/img/course-details.jpg" class="img-fluid" alt="">
+            <h3>Learn Web Development from scratch</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+            This Specialization covers how to write syntactically correct HTML5 and CSS3, and how to create interactive web experiences with JavaScript. Mastering this range of technologies will allow you to develop high quality web sites that, work seamlessly on mobile, tablet, and large screen browsers accessible. During the capstone you will develop a professional-quality web portfolio demonstrating your growth as a web developer and your knowledge of accessible web design. This will include your ability to design and implement a responsive site that utilizes tools to create a site that is accessible to a wide audience,
+             including those with visual, audial, physical, and cognitive impairments.
             </p>
+          </div>
+          <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              
+              <h5>Educator</h5>
+              <p><a href="#">Myself</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$170</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Students joined</h5>
+              <p>3000</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Cource Details Section -->
 
-    <!-- ======= Popular Courses Section ======= -->
-    <section id="popular-courses" class="courses">
+<!-- ======= Related Courses Section ======= -->
+    <section id="popular-courses" class="related-course courses">
           <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-              <p class="course-heading">Popular Courses</p>
+              <p class="course-heading">Related Courses</p>
             </div>
 
             <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
               <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                 <div class="course-item">
-                  <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
+                  <img src="../assets/img/course-1.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                       <h4>Web Development</h4>
@@ -253,7 +207,7 @@
 
               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                 <div class="course-item">
-                  <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
+                  <img src="../assets/img/course-2.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                       <h4>Python</h4>
@@ -269,7 +223,7 @@
 
               <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                 <div class="course-item">
-                  <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
+                  <img src="../assets/img/course-3.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                       <h4>Java</h4>
@@ -284,78 +238,8 @@
               </div> <!-- End Course Item-->
             </div>
           </div>
-        </section><!-- End Popular Courses Section -->
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <h3><span>Contact Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-            <i class="fa fa-map-marker"></i>
-              <h3>Our Address</h3>
-              <p>Diamond Harbour Rd,Thakurpukur, Kolkata-700063</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-            <i class="fa fa-envelope"></i>
-              <h3>Email Us</h3>
-              <p>contact@gmail.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-            <i class="fa fa-phone"></i>
-              <h3>Call Us</h3>
-              <p>+91 9876543210</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.058975331527!2d88.30559331490886!3d22.46441798523857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027a8bc7db49ed%3A0xf7ab6bbe6079d673!2sVivekananda%20College!5e0!3m2!1sen!2sin!4v1624975763630!5m2!1sen!2sin" frameborder="0" width="100%" height="384px" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          <div class="col-lg-6">
-            <form action="#" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-</main><!-- End main Section -->
+        </section><!-- End related Courses Section -->
+  </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
@@ -423,20 +307,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-angle-up"></i></a>
   
 <!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
-
-                <p style="color: red;">
-			            <?php
-				              if(isset($_REQUEST['status'])) {
-					            echo $_REQUEST['status'];
-                      // echo $_REQUEST[$q1];
-				              }
-			            ?>
-		            </p>
-<!-- this div is for the buttons -->
-       
-            <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
-            <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->
-        
 </html>
