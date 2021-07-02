@@ -2,21 +2,7 @@
     body {
         margin: 0px;
         padding: 0px;
-        background: url(../img/bg.jpg) no-repeat center center fixed;
-        background-size: cover;
         font-family: 'Baloo Bhai 2', cursive;
-    }
-    #home{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding: 5px 200px;
-        color: purple;
-    }
-    section p{
-        font-size: 20px;
-        color:purple;
     }
     .action{
         position: fixed;
@@ -93,3 +79,54 @@
     .action .menu ul li:hover a{
         color:#b41a4e;
     }
+
+/*--------------------------------------------------------------
+# Home section
+--------------------------------------------------------------*/
+#home{
+    width: 100%;
+    height: 70vh;
+    background: url(../assets/img/bg.jpg) top center;
+    background-size: cover;
+    position: relative;
+}
+#home .container {
+    position: relative;
+  }      
+#home .btn-get-started{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 18px;
+    transition: 0.5s;
+    margin-top: 30px;
+    border: 2px solid rgb(247, 240, 240);
+    color: black;          
+}
+.btn-get-started:hover{
+    background-color: white; 
+    transform: scale(1.1); 
+}
+#home a{
+   text-decoration: none;
+}
+
+#home .container{
+padding-top: 80px;
+}
+@media (min-width: 1024px){
+#home{
+    background-attachment: fixed;
+}
+}
+.navbar{
+margin-bottom: 0px;
+border-radius: 2px;
+}
+.container h1{
+font-weight: 600;
+font-size: 40px;
+}
