@@ -128,6 +128,7 @@ echo "</ul>";
 		<th>user id</th>
 		<th>Course Name</th>
     <th>Course Description</th>
+    <th>Course Image</th>
     <th>Course Type</th>
     <th>Course Fee</th>
 		<th>Delete</th>
@@ -170,6 +171,7 @@ while($row = mysqli_fetch_array($qry1)) {
 		echo "<td>".$row['user_id']."</td>";
 		echo "<td><a href=../contents/contents.php?id=".$row['id'].">".$row['name']."</a></td>";
     echo "<td>".$row['description']."</td>";
+    echo "<td><img src='".$row['image']."' width = '100'></td>";
     echo "<td>".$row['type']."</td>";
     echo "<td>".$row['coursefee']."</td>";
 		echo "<td><a href=../course/delete-course.php?id=".$row['id'].">Delete</a></td>";
