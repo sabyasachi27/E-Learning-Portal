@@ -453,6 +453,14 @@ img, svg{
 .course-details .course-info a {
   color: #657a6d;
 }
+.text-gray-600 .testimonial-title p{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+}
+.text-gray-600{
+  background-color: rgb(236, 234, 234);
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
