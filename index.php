@@ -29,9 +29,9 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+<?php include_once "layout/navbar.php"; ?>
+<!-- <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -42,7 +42,6 @@
       <a class="navbar-brand" href="index.php">StudyLand</a>
     </div>
  
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#home">Home</a></li>
@@ -74,19 +73,12 @@
             <li><a href="teacher/register-teacher.php">Teacher</a></li>
           </ul>
         </li>  
-        <!-- <li><p class="navbar-text">Already have an account?</p></li> -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
 			<ul id="login-dp" class="dropdown-menu">
 				<li>
 					 <div class="row">
 							<div class="col-md-12">
-								<!-- Login via
-								<div class="social-buttons">
-									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-								</div>
-                  or -->
 								 <form class="form" role="form" method="post" action="login-acc.php" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
@@ -122,9 +114,9 @@
 			</ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div>
+  </div>
+</nav> -->
 
 <!-- ======Start of Home Section====== -->
 <section id="home" class="d-flex align-items-center">

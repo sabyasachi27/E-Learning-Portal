@@ -15,7 +15,12 @@ $q1 = mysqli_query($con, $qr);
 $teacher= mysqli_fetch_array($q1);
 //print_r($_REQUEST['type']);die();
 
-$qry = "INSERT INTO `courses` VALUES (NULL, '".$teacher['id']."', '".$_REQUEST['name']."', '".$_REQUEST['description']."', '".$_REQUEST['type']."', '".$_REQUEST['coursefee']."', 'active')";
+// processing the image
+$path = "../uploads/".$_FILES["image"]["name"];
+$tmp = $_FILES["image"]["tmp_name"];
+move_uploaded_file($tmp, $path);
+
+$qry = "INSERT INTO `courses` VALUES (NULL, '".$teacher['id']."', '".$_REQUEST['name']."', '".$_REQUEST['description']."', '".$path."', '".$_REQUEST['type']."', '".$_REQUEST['coursefee']."', 'active')";
 
 $qry_exec = mysqli_query($con, $qry);
 //print_r($qry);die();
