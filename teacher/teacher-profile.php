@@ -46,7 +46,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="stud-profile.php">E Learning Portal</a>
+      <a class="navbar-brand" href="teacher-profile.php">StudyLand</a>
     </div>
  
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -108,6 +108,7 @@ echo "</ul>";
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
 <section id="home">
 <h1>Welcome to our site</h1>
 <p>Do you get caught everytime you try to cheat? Then don't worry you are in the right place.</p> 

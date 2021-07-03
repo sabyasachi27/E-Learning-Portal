@@ -122,8 +122,11 @@
 <section id="home" class="d-flex align-items-center">
 <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>Welcome to <span>StudyLand</span></h1>
-      <h2>Education is the most powerful weapon which you can use to change the world</h2>
+      <h3>Education is the most powerful weapon which you can use to change the world</h3>
       <div class="d-flex">
+        <!-- <div class="text">
+          <P> Register and log in to become our family member </p>
+        </div> -->
         <a href="#" class="btn-get-started">Get Started</a>
       </div>
     </div>

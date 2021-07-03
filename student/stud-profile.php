@@ -36,6 +36,7 @@
 </head>
 
 <body>
+
 <nav class="navbar navbar-default navbar-inverse" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,7 +47,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="stud-profile.php">E Learning Portal</a>
+      <a class="navbar-brand" href="stud-profile.php">StudyLand</a>
     </div>
  
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -96,9 +97,9 @@
  
 
 	$student= mysqli_fetch_array($q1);
- // echo $student['id'];
+ 
   echo "<ul>";
-  echo "<li><i class='fa fa-envelope-o'></i><a href=student-dashboard.php?id=".$student['id'].">Dashboard</a></li>";
+  echo "<li><i class='fa fa-envelope-o'></i><a href=teacher-dashboard.php?id=".$student['id'].">Dashboard</a></li>";
   echo "<li><i class='fa fa-pencil-square-o'></i><a href=edit-profile.php?id=".$student['id'].">Edit Profile</a></li>";
   echo "<li><i class='fa fa-sign-out'></i><a href=../logout.php?id=".$student['id'].">Logout</a></li>";
 echo "</ul>";
@@ -112,8 +113,8 @@ echo "</ul>";
 <!-- ======Start of Home Section====== -->
 <section id="home" class="d-flex align-items-center">
    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>StudyLand</span></h1>
-      <h2>Education is the most powerful weapon which you can use to change the world</h2>
+      <h2>University and college students, learn job-ready skills with StudyLand for Campus</h2>
+      <!-- <h3>Education is the most powerful weapon which you can use to change the world</h3> -->
       <div class="d-flex">
         <a href="#" class="btn-get-started">Get Started</a>
       </div>
@@ -129,7 +130,6 @@ echo "</ul>";
 </script>  
 </body>
 <!-- this div is for the buttons -->
-
 
 <?php
 	
