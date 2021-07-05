@@ -124,9 +124,6 @@
       <h1>Welcome to <span>StudyLand</span></h1>
       <h3>Education is the most powerful weapon which you can use to change the world</h3>
       <div class="d-flex">
-        <!-- <div class="text">
-          <P> Register and log in to become our family member </p>
-        </div> -->
         <a href="#" class="btn-get-started">Get Started</a>
       </div>
     </div>
@@ -232,7 +229,7 @@
 
             <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                 <div class="course-item">
                   <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
@@ -281,6 +278,31 @@
             </div>
           </div>
         </section><!-- End Popular Courses Section -->
+  
+  <!-- Start statistic Section -->
+  <section class="statistic-sec body-font">
+  <div class="container-stats container px-5 py-24 mx-auto">
+    <h2 class="heading">We have achieved so far</h2>
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4.7K</h2>
+        <p class="leading-relaxed">Students</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.8K</h2>
+        <p class="leading-relaxed">Educators</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">100+</h2>
+        <p class="leading-relaxed">Courses</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">400+</h2>
+        <p class="leading-relaxed">Video lecture</p>
+      </div>
+    </div>
+  </div>
+</section><!-- End statistic Section -->
 
   <!-- Testimonial Section -->
   <section class="text-gray-600 body-font">
@@ -318,7 +340,7 @@
       </div>
     </div>
   </div>
-</section> <!-- Testimonial Section -->
+</section> <!--End Testimonial Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">

@@ -84,7 +84,7 @@
 								 </form>
 							</div>
 							<div class="bottom text-center">
-								New here ? <a href="registeras.php"><b>Register</b></a>
+								New here ? <a href="#"><b>Register</b></a>
 							</div>
 					 </div>
 				</li>
