@@ -4,7 +4,7 @@
 
 	// running a query
 	//print_r($_REQUEST['id']);die();
-	$qry = "UPDATE `student` SET `name` = '".$_REQUEST['name']."', `email` = '".$_REQUEST['email']."', `mobnumber` = '".$_REQUEST['phno']."'  WHERE `id` = ".$_REQUEST['id'];
+	$qry = "UPDATE `student` SET `profileimg` = '".$path."', `name` = '".$_REQUEST['name']."', `email` = '".$_REQUEST['email']."', `mobnumber` = '".$_REQUEST['phno']."'  WHERE `id` = ".$_REQUEST['id'];
 	$qry_exec = mysqli_query($con, $qry);
 
 	if ($qry_exec) {

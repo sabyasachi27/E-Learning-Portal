@@ -8,7 +8,7 @@
     if($num == 0) {
 
         //running query for inserting data
-        $qry = "INSERT INTO `teacher` VALUES (NULL, '".$_REQUEST['name']."', '".$_REQUEST['email']."', '".$_REQUEST['password']."', '".$_REQUEST['mobile']."', 'active')";
+        $qry = "INSERT INTO `teacher` VALUES (NULL, '".$path."', '".$_REQUEST['name']."', '".$_REQUEST['email']."', '".$_REQUEST['password']."', '".$_REQUEST['mobile']."', 'active')";
         $qry_exec = mysqli_query($con, $qry);
         
         if($qry_exec)
