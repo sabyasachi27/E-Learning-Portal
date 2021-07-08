@@ -241,9 +241,9 @@ echo "</ul>";
          <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$row['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row['name']);?></h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($row['description']);?></h2>
-          <button class="buy-btn"><?php print_r($row['coursefee']);?></button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row['name']);?></h3> <!-- course name-->
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($row['description']);?></h2>  <!-- content name-->
+          <button class="buy-btn">$<?php print_r($row['coursefee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -319,6 +319,31 @@ echo "</ul>";
     </div>
   </div>
 </section><!-- ======End of Ecommerce Section====== -->
+
+<!-- Start statistic Section -->
+<section class="statistic-sec body-font">
+  <div class="container-stats container px-5 py-24 mx-auto">
+    <h2 class="heading">We have achieved so far</h2>
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4.7K</h2>
+        <p class="leading-relaxed">Students</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.8K</h2>
+        <p class="leading-relaxed">Educators</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">100+</h2>
+        <p class="leading-relaxed">Courses</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">400+</h2>
+        <p class="leading-relaxed">Video lecture</p>
+      </div>
+    </div>
+  </div>
+</section><!-- End statistic Section -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">

@@ -212,7 +212,6 @@ echo "</ul>";
       </div>
     </section><!-- End Counts Section -->
 
-
 <!-- steps to start section -->
 <section id="steps" class="steps-to-start">
   <div class="step-container">
@@ -247,6 +246,69 @@ echo "</ul>";
   </div>
 </section>
 
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>StudyLand</h3>
+          <p>
+            Diamond Harbour Rd, Thakurpukur <br>
+            Kolkata-700063<br>
+            West Bengal <br><br>
+            <strong>Phone:</strong> +91 9876543210 <br>
+            <strong>Email:</strong> contact@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Home</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">About us</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Course</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Terms of service</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Programming</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Web Development</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">SCC Exams</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">NEET UG</a></li>
+            <li><i class="fa fa-dot-circle-o"></i> <a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Now you can join us on social media platforms to stay updated to our latest news</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright-sec py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>StudyLand</span></strong>. All Rights Reserved
+    </div>
+  </div>
+  </footer><!-- End Footer -->
+
+  <!-- <div id="preloader"></div> -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-angle-up"></i></a> 
 
 <script>
   function menuToggle()
