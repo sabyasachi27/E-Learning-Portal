@@ -20,6 +20,8 @@
     <meta property="og:image:width" content="200">
     <meta property="og:image:height" content="200">
     <script async="" src="//cse.google.com/adsense/search/async-ads.js"></script>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
    <!-- Bootstrap CSS -->
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
     <!-- Font Awesome CSS -->
@@ -36,7 +38,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-inverse" role="navigation">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -109,18 +111,184 @@ echo "</ul>";
   </div><!-- /.container-fluid -->
 </nav>
 
-<section id="home">
-<h1>Welcome to our site</h1>
-<p>Do you get caught everytime you try to cheat? Then don't worry you are in the right place.</p> 
-<p>We give our students the best training which will help then to become cheater <b>pro max</b>.Success will automatically touch your feet!</P>
+<!-- ======= Home Section ======= -->
+<section id="home" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>StudyLand</span></h1>
+      <h3>Come and teach with us</h3>
+      <h4>Become an instructor and change lives — including your own</h4>
+    </div>
 </section> 
+
+<!-- ======= Reasons to start Section ======= -->
+<section id="values" class="values">
+
+<div class="container" data-aos="fade-up">
+
+  <header class="section-header">
+    <h2>So many reasons to start</h2>
+  </header>
+
+  <div class="row">
+
+    <div class="col-lg-4">
+      <div class="box" data-aos="fade-up" data-aos-delay="200">
+        <img src="../assets/img/knowledge.jpg" class="img-fluid" alt="">
+        <h3>Inspire learners</h3>
+        <p class="size-change">Teach what you know and help learners explore their interests, gain new skills, and advance their careers.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-4 mt-lg-0">
+      <div class="box" data-aos="fade-up" data-aos-delay="400">
+        <img src="../assets/img/values-1.png" class="img-fluid" alt="">
+        <h3>Teach your way</h3>
+        <p class="size-change">Publish the course you want, in the way you want, and always have of control your own content.</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mt-4 mt-lg-0">
+      <div class="box" data-aos="fade-up" data-aos-delay="600">
+        <img src="../assets/img/reward.jpeg" class="img-fluid" alt="">
+        <h3>Get rewarded</h3>
+        <p class="size-change">Expand your professional network, build your expertise, and earn money on each paid enrollment.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</section><!-- End Reasons to start Section -->
+
+<!-- ======= Counts Section ======= -->
+<section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+            <i class="fa fa-smile-o"></i>
+              <div>
+                <p>4.7k</p>
+                <p>Students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="fa fa-users" style="color: #bb0852;"></i>
+              <div>
+                <p>1.8k</p>
+                <p>Educators</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+            <i class="fa fa-desktop" style="color: #ee6c20;"></i>
+              <div>
+                <p>100+</p>
+                <p>Courses</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="fa fa-video-camera" style="color: #15be56;"></i>
+              <div>
+                <p>400+</p>
+                <p>Video lectures</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+<!-- steps to start section -->
+<section id="steps" class="steps-to-start">
+  <div class="step-container">
+    <div class="step-heading">
+      <h2>How to start</h2>
+    </div>
+    <div class="count">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+    </div>
+    <div class="content first">
+      <h1>Plan Curriculum</h1>
+      <p>You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.
+         The way that you teach — what you bring to it — is up to you.</p>
+      <button>Get Started</button>
+    </div>
+    <div class="content second">
+      <h1>Record Video</h1>
+      <p>Use basic tools like a smartphone or a DSLR camera. Add a good microphone and you’re ready to start.
+         If you don’t like being on camera, just capture your screen.</p>
+      <button>Get Started</button>
+    </div>
+    <div class="content third">
+      <h1>Launch Course</h1>
+      <p>Gather your first ratings, reviews by promoting your course through social media and professional networks.
+         Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.
+
+</p>
+      <button>Get Started</button>
+    </div>
+  </div>
+</section>
+
+
 <script>
   function menuToggle()
   {
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active'); 
   }
-</script>  
+</script> 
+<script>
+  // steps to start
+const one = document.querySelector('#one');
+const two = document.querySelector('#two');
+const three = document.querySelector('#three');
+// Now addEventListener
+one.addEventListener('click', () => {
+  document.querySelector('.first').style.display = "block";
+  document.querySelector('.second').style.display = "none";
+  document.querySelector('.third').style.display = "none";
+  one.classList.add('active');
+  two.classList.remove('active');
+  three.classList.remove('active');
+});
+
+two.addEventListener('click', () => {
+  document.querySelector('.first').style.display = "none";
+  document.querySelector('.second').style.display = "block";
+  document.querySelector('.third').style.display = "none";
+  one.classList.remove('active');
+  two.classList.add('active');
+  three.classList.remove('active');
+});
+
+three.addEventListener('click', () => {
+  document.querySelector('.first').style.display = "none";
+  document.querySelector('.second').style.display = "none";
+  document.querySelector('.third').style.display = "block";
+  one.classList.remove('active');
+  two.classList.remove('active');
+  three.classList.add('active');
+});
+</script> 
+<script src="../assets/js/main.js"></script>
 </body>
 <!-- this div is for the buttons -->
 <table border="1">

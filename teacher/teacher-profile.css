@@ -2,21 +2,7 @@
     body {
         margin: 0px;
         padding: 0px;
-        background: url(../assets/img/bg.jpg) no-repeat center center fixed;
-        background-size: cover;
         font-family: 'Baloo Bhai 2', cursive;
-    }
-    #home{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding: 5px 200px;
-        color: purple;
-    }
-    section p{
-        font-size: 20px;
-        color:purple;
     }
     .action{
         position: fixed;
@@ -38,6 +24,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        /* z-index: -1; */
     }
     .action .menu{
         position: absolute;
@@ -93,3 +80,262 @@
     .action .menu ul li:hover a{
         color:#b41a4e;
     }
+
+/*--------------------------------------------------------------
+# Home Section
+--------------------------------------------------------------*/
+#home{
+  width: 100%;
+  height: 70vh;
+  background: url(../assets/img/teacher-profile.jpg) top center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+#home .container {
+  position: relative;
+}             
+
+#home .container{
+padding-top: 150px;
+}
+@media (min-width: 1024px){
+#home{
+  background-attachment: fixed;
+}
+}
+.navbar{
+margin-bottom: 0px;
+border-radius: 2px;
+}
+.container h1{
+font-weight: 600;
+font-size: 50px;
+}
+.container h3{
+  font-weight: 500;
+  font-size: 35px;
+  }
+.container p{
+  font-size: 1.65rem;
+}
+.container h4{
+  font-size: 20px;
+}
+  
+/*--------------------------------------------------------------
+# Values
+--------------------------------------------------------------*/
+.values{
+  display: block;
+  padding: 60px 0;
+  overflow: hidden;
+}
+header{
+  display: block;
+}
+.section-header{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.values .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.values .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+img, svg{
+  vertical-align: middle;
+}
+.values .box h3 {
+  font-size: 22px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.values .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.values .box:hover img {
+  transform: scale(1);
+}
+.size-change{
+  font-size: 16px;
+}
+.row{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+@media (min-width: 992px){
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}
+}
+.row>*{
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)/ 2);
+  padding-left: calc(var(--bs-gutter-x)/ 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.counts .count-box i {
+  font-size: 42px;
+  line-height: 0;
+  margin-right: 20px;
+  color: #4154f1;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #0b198f;
+}
+
+.counts .count-box p {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+/* steps to start */
+.step-heading h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 34px;
+}
+.steps-to-start{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(241, 197, 180);
+}
+.step-container{
+  min-height: 400px;
+  width: 700px;
+  background: cornsilk;
+  box-shadow: 6px 2px 4px #eceff8, 4px 3px 30px #000;
+  padding: 30px 50px 30px 50px;
+  text-align: center;
+  margin: 60px 0 60px 0;
+}
+.step-container .count{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.step-container .count div{
+  height: 50px;
+  width: 50px;
+  background: #f0f2f7;
+  border-radius: 50%;
+  padding: 15px;
+  font-weight: bold;
+  color: #ccc;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.count div:hover{
+  background: #7a90fd;
+  color: #fff;
+}
+.count div.active{
+  background: #7a90fd;
+  color: #fff;
+}
+.count div::before{
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  height: 2px;
+  width: 150px;
+  background: #ccc;
+}
+.count div:last-child::before{
+  display: none;
+}
+.content h1{
+  margin: 10px 0px;
+  font-family: sans-serif;
+}
+.content p{
+  margin: 10px 0px;
+  text-align: center;
+  font-size: 18px;
+  color: #7c7aa1;
+}
+.content button{
+  padding: 15px 60px;
+  margin-top: 20px;
+  background: rgb(84, 84, 209);
+  color: #fff;
+  border:0;
+  outline: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.content button:hover{
+  transform: scale(1.1);
+}
+.content.second,
+.content.third{
+  display: none;
+}
+@media(max-width: 800px){
+  .step-container{
+    width: auto;
+    margin: 50px;
+  }
+  .count div::before{
+    width: 150px;
+  }
+}
+
+@media(max-width: 700px){
+  .count div::before{
+    width: 100px;
+  }
+} 
+/* End steps to start section */
