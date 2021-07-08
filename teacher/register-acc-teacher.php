@@ -8,6 +8,10 @@
     if($num == 0) {
 
         //running query for inserting data
+        $path = "../uploads/".$_FILES["image"]["name"];
+        $tmp = $_FILES["image"]["tmp_name"];
+        move_uploaded_file($tmp, $path);
+
         $qry = "INSERT INTO `teacher` VALUES (NULL, '".$path."', '".$_REQUEST['name']."', '".$_REQUEST['email']."', '".$_REQUEST['password']."', '".$_REQUEST['mobile']."', 'active')";
         $qry_exec = mysqli_query($con, $qry);
         

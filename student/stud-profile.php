@@ -203,6 +203,32 @@ echo "</ul>";
   </div>
 </section><!-- ======End of Feature Section====== -->
 
+<!-- Querry for manupulating courses -->
+<?php 
+                          $a = rand(1, 5);
+                          $b = rand(1, 5);
+                          $c = rand(1, 5);
+                         $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
+                          $row = mysqli_fetch_array($qry);
+
+                          $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
+                          $row1 = mysqli_fetch_array($qry1);
+
+                          $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
+                          $row2 = mysqli_fetch_array($qry2);
+
+
+                          //$qry3= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$_REQUEST['id']."' ");
+                          //$row3 = mysqli_fetch_array($qry3);
+
+                          //$qry4 = mysqli_query($con, "SELECT * FROM `teacher` WHERE `id` = '".$row3['user_id']."' ");
+                          //$teacher = mysqli_fetch_array($qry4);
+
+                          //echo (rand(10, 100));
+                          //echo $teacher['name'];die();
+                          
+?>
+
 <!-- ======Start Ecommerce Home Section====== -->
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
@@ -212,12 +238,12 @@ echo "</ul>";
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+         <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$row['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-          <button class="buy-btn">$18.40</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row['name']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($row['description']);?></h2>
+          <button class="buy-btn"><?php print_r($row['coursefee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">

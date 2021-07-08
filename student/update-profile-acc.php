@@ -4,6 +4,10 @@
 
 	// running a query
 	//print_r($_REQUEST['id']);die();
+	$path = "../uploads/".$_FILES["image"]["name"];
+	$tmp = $_FILES["image"]["tmp_name"];
+	move_uploaded_file($tmp, $path);
+
 	$qry = "UPDATE `student` SET `profileimg` = '".$path."', `name` = '".$_REQUEST['name']."', `email` = '".$_REQUEST['email']."', `mobnumber` = '".$_REQUEST['phno']."'  WHERE `id` = ".$_REQUEST['id'];
 	$qry_exec = mysqli_query($con, $qry);
 

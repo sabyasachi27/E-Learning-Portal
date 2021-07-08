@@ -1,3 +1,5 @@
+<?php include_once "connection.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#" style="height: 100%;">
 
@@ -117,6 +119,26 @@
     </div>
   </div>
 </nav> -->
+<!-- Query for manupulating courses -->
+<?php 
+                          
+                  
+                          $a = rand(1, 5);
+                          $b = rand(1, 5);
+                         $c = rand(1, 5);
+                         $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
+                          $row = mysqli_fetch_array($qry);
+
+                          $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
+                          $row1 = mysqli_fetch_array($qry1);
+
+                          $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
+                          $row2 = mysqli_fetch_array($qry2);
+                         //echo (rand(10, 100));
+                          //print_r ($row);
+                  
+                          
+                          ?>
 
 <!-- ======Start of Home Section====== -->
 <section id="home" class="d-flex align-items-center">
@@ -234,12 +256,12 @@
                   <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4>Web Development</h4>
-                      <p class="price">$170</p>
+                      <h4><?php print_r($row['name']);?></h4>
+                      <p class="price"><?php print_r($row['coursefee']);?></p>
                     </div>
 
-                    <h3><a href="course/course-details.php">Website Design</a></h3>
-                    <p>Web design encompasses with many different skills and disciplines in the production and maintenance of websites.</p>
+                    <?php echo "<h3><a href=course/course-details.php?id=".$row['id'].">".$row['name']."</a></h3>" ?>
+                    <p><?php print_r($row['description']);?></p>
                   </div>
                 </div>
               </div> <!-- End Course Item-->
@@ -249,12 +271,12 @@
                   <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4>Python</h4>
-                      <p class="price">$240</p>
+                      <h4><?php print_r($row1['name']);?></h4>
+                      <p class="price"><?php print_r($row1['coursefee']);?></p>
                     </div>
 
-                    <h3><a href="course/course-details.php">Python programming</a></h3>
-                    <p>Python is a interpreted high-level programming language that lets you work quickly and integrate systems more effectively.</p>
+                    <?php echo "<h3><a href=course/course-details.php?id=".$row1['id'].">".$row1['name']."</a></h3>" ?>
+                    <p><?php print_r($row1['description']);?></p>
                    
                   </div>
                 </div>
@@ -265,12 +287,12 @@
                   <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4>Java</h4>
-                      <p class="price">$200</p>
+                      <h4><?php print_r($row2['name']);?></h4>
+                      <p class="price"><?php print_r($row2['coursefee']);?></p>
                     </div>
 
-                    <h3><a href="course/course-details.php">Java programming</a></h3>
-                    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+                    <?php echo "<h3><a href=course/course-details.php?id=".$row2['id'].">".$row2['name']."</a></h3>" ?>
+                    <p><?php print_r($row2['description']);?></p>
                     
                   </div>
                 </div>

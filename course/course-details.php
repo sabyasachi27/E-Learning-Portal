@@ -1,3 +1,6 @@
+<?php include_once "../connection.php"; ?>
+
+
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#" style="height: 100%;">
 
@@ -33,6 +36,32 @@
 <body>
 <?php include_once "../layout/navbar.php"; ?>
 
+<!-- Query for manupulating courses -->
+<?php 
+                          $a = rand(1, 5);
+                          $b = rand(1, 5);
+                          $c = rand(1, 5);
+                         $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
+                          $row = mysqli_fetch_array($qry);
+
+                          $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
+                          $row1 = mysqli_fetch_array($qry1);
+
+                          $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
+                          $row2 = mysqli_fetch_array($qry2);
+
+
+                          $qry3= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$_REQUEST['id']."' ");
+                          $row3 = mysqli_fetch_array($qry3);
+
+                          $qry4 = mysqli_query($con, "SELECT * FROM `teacher` WHERE `id` = '".$row3['user_id']."' ");
+                          $teacher = mysqli_fetch_array($qry4);
+
+                          //echo (rand(10, 100));
+                          //echo $teacher['name'];die();
+                          
+?>
+
 <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -50,10 +79,9 @@
         <div class="row">
           <div class="course-details col-lg-8">
             <img src="../assets/img/course-details.jpg" class="img-fluid" alt="">
-            <h3>Learn Web Development from scratch</h3>
+            <h3>Learn <?php print_r($row3['name']); ?> from scratch</h3>
             <p>
-            This Specialization covers how to write syntactically correct HTML5 and CSS3, and how to create interactive web experiences with JavaScript. Mastering this range of technologies will allow you to develop high quality web sites that, work seamlessly on mobile, tablet, and large screen browsers accessible. During the capstone you will develop a professional-quality web portfolio demonstrating your growth as a web developer and your knowledge of accessible web design. This will include your ability to design and implement a responsive site that utilizes tools to create a site that is accessible to a wide audience,
-             including those with visual, audial, physical, and cognitive impairments.
+            <?php print_r($row3['description']); ?>
             </p>
           </div>
           <div class="col-lg-4">
@@ -61,12 +89,12 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               
               <h5>Educator</h5>
-              <p><a href="#">Myself</a></p>
+              <?php echo "<h3><a href=#>".$teacher['name']."</a></h3>" ?>
             </div>
 
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Course Fee</h5>
-              <p>$170</p>
+              <p><?php print_r($row3['coursefee']); ?></p>
             </div>
 
             <div class="course-info d-flex justify-content-between align-items-center">
@@ -85,7 +113,10 @@
       </div>
     </section><!-- End Cource Details Section -->
 
+   
+
 <!-- ======= Related Courses Section ======= -->
+
     <section id="popular-courses" class="related-course courses">
           <div class="container" data-aos="fade-up">
 
@@ -100,12 +131,12 @@
                   <img src="../assets/img/course-1.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4>Web Development</h4>
-                      <p class="price">$170</p>
+                      <h4><?php print_r($row['name'])?></h4>
+                      <p class="price"><?php print_r($row['coursefee'])?></p>
                     </div>
-
-                    <h3><a href="course/course-details.php">Website Design</a></h3>
-                    <p>Web design encompasses with many different skills and disciplines in the production and maintenance of websites.</p>
+                        
+                    <h3><a href="course/course-details.php"><?php print_r($row['name'])?></a></h3>
+                    <p><?php print_r($row['description'])?></p>
                   </div>
                 </div>
               </div> <!-- End Course Item-->
@@ -115,12 +146,12 @@
                   <img src="../assets/img/course-2.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4>Python</h4>
-                      <p class="price">$240</p>
+                      <h4><?php print_r($row1['name'])?></h4>
+                      <p class="price"><?php print_r($row1['coursefee'])?></p>
                     </div>
 
-                    <h3><a href="course/course-details.php">Python programming</a></h3>
-                    <p>Python is a interpreted high-level programming language that lets you work quickly and integrate systems more effectively.</p>
+                    <h3><a href="course/course-details.php"><?php print_r($row1['name'])?></a></h3>
+                    <p><?php print_r($row1['description'])?></p>
                    
                   </div>
                 </div>
@@ -131,12 +162,12 @@
                   <img src="../assets/img/course-3.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4>Java</h4>
-                      <p class="price">$200</p>
+                      <h4><?php print_r($row2['name'])?></h4>
+                      <p class="price"><?php print_r($row2['coursefee'])?></p>
                     </div>
 
-                    <h3><a href="course/course-details.php">Java programming</a></h3>
-                    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+                    <h3><a href="course/course-details.php"><?php print_r($row2['name'])?></a></h3>
+                    <p><?php print_r($row['description'])?></p>
                     
                   </div>
                 </div>
