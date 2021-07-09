@@ -227,21 +227,19 @@ echo "</ul>";
       <h1>Plan Curriculum</h1>
       <p>You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.
          The way that you teach — what you bring to it — is up to you.</p>
-      <button>Get Started</button>
+      <button id="myButton">Get Started</button>
     </div>
     <div class="content second">
       <h1>Record Video</h1>
       <p>Use basic tools like a smartphone or a DSLR camera. Add a good microphone and you’re ready to start.
          If you don’t like being on camera, just capture your screen.</p>
-      <button>Get Started</button>
+      <button id="myButton">Get Started</button>
     </div>
     <div class="content third">
       <h1>Launch Course</h1>
       <p>Gather your first ratings, reviews by promoting your course through social media and professional networks.
-         Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.
-
-</p>
-      <button>Get Started</button>
+         Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.</p>
+      <button id="myButton">Get Started</button>
     </div>
   </div>
 </section>
@@ -349,11 +347,16 @@ three.addEventListener('click', () => {
   two.classList.remove('active');
   three.classList.add('active');
 });
+</script>
+<script>
+  document.getElementById('myButton').onclick = function (){
+    location.href = "course-manupulate.php";
+  };
 </script> 
 <script src="../assets/js/main.js"></script>
 </body>
 <!-- this div is for the buttons -->
-<table border="1">
+<!-- <table border="1">
 	<tr>
 		<th>ID</th>
 		<th>user id</th>
@@ -416,9 +419,8 @@ else {
 
 	}
 
-  
 
-?>
+?> -->
 <br><br>
 <a href="../course/insert-course.php">Add</a>
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
