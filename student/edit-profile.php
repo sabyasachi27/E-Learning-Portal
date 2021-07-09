@@ -26,7 +26,7 @@
     <form action="update-profile-acc.php" method="post">
     <input type="hidden" name="id" value="<?=$row['id']?>">
         <div class="box">
-            <img src="../upload" alt="Profile Pic">
+            <img src="../assets/img/man.png" alt="Profile Pic">
             <input type="file" name="image" id="file" accept="image/*">
             <div class="editpic">
                 <label for="file">EDIT PIC</label>
