@@ -40,7 +40,7 @@
 <body>
     <div class="outer-container">
         <div class="upper-container">
-            <img src="assets/img/profile-photo.jpg" alt="...">
+            <img src="../assets/img/profile-photo.jpg" alt="...">
         </div>
         <div class="lower-container">
             <div class="name"><?php print_r($student['name']);?></div>

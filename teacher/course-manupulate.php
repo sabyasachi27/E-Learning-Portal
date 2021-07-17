@@ -1,4 +1,4 @@
-
+<?php include_once "../connection.php"; ?>
 <table border="1">
 	<tr>
 		<th>ID</th>
@@ -15,6 +15,7 @@
 
     <?php
 	
+	session_start();
 	$qr = 	"SELECT 
 				*
 			FROM 
@@ -42,7 +43,7 @@
 while($row = mysqli_fetch_array($qry1)) {
   
 	
-	if($teacher['id'] === $row['user_id']){
+	if($teacher['id'] === $row['teacher_id']){
 		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
 		echo "<td>".$row['user_id']."</td>";
