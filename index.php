@@ -123,19 +123,19 @@
 <?php 
                           
                   
-                          $a = rand(1, 5);
-                          $b = rand(1, 5);
-                         $c = rand(1, 5);
-                         $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
-                          $row = mysqli_fetch_array($qry);
+                        //   $a = rand(1, 5);
+                        //   $b = rand(1, 5);
+                        //  $c = rand(1, 5);
+                        //  $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
+                        //   $row = mysqli_fetch_array($qry);
 
-                          $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
-                          $row1 = mysqli_fetch_array($qry1);
+                        //   $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
+                        //   $row1 = mysqli_fetch_array($qry1);
 
-                          $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
-                          $row2 = mysqli_fetch_array($qry2);
-                         //echo (rand(10, 100));
-                          //print_r ($row);
+                        //   $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
+                        //   $row2 = mysqli_fetch_array($qry2);
+                        //  //echo (rand(10, 100));
+                        //   //print_r ($row);
                   
                           
                           ?>

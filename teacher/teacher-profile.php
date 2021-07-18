@@ -239,7 +239,7 @@ echo "</ul>";
       <h1>Launch Course</h1>
       <p>Gather your first ratings, reviews by promoting your course through social media and professional networks.
          Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.</p>
-      <button id="myButton">Get Started</button>
+      <button id="myButton" >Get Started</button>
     </div>
   </div>
 </section>

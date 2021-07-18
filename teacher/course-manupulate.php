@@ -1,4 +1,4 @@
-
+<?php include_once "../connection.php"; ?>
 <table border="1">
 	<tr>
 		<th>ID</th>
@@ -14,13 +14,13 @@
 	</tr>
 
     <?php
-	
+	print_r($_REQUEST['id']);die();
 	$qr = 	"SELECT 
 				*
 			FROM 
 				`teacher`
 			WHERE 
-				`id` = ".$_SESSION['id'];
+				`id` = ".$_REQUEST['id'];
 
 	$q1 = mysqli_query($con, $qr);
 
