@@ -1,5 +1,18 @@
 <?php include_once "connection.php"; ?>
-
+<?php 
+  session_start();
+  print_r($_SESSION);
+  if (isset($_SESSION['id'])) {
+		if($_SESSION['role']=='teacher')
+    {
+      header('location: teacher/teacher-profile.php');
+    }
+    else{
+      header('location: student/stud-profile.php');
+    }
+	}
+  // die();
+?>
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#" style="height: 100%;">
 

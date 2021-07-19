@@ -14,13 +14,14 @@
 	</tr>
 
     <?php
-	print_r($_REQUEST['id']);die();
+	
+	session_start();
 	$qr = 	"SELECT 
 				*
 			FROM 
 				`teacher`
 			WHERE 
-				`id` = ".$_REQUEST['id'];
+				`id` = ".$_['id'];
 
 	$q1 = mysqli_query($con, $qr);
 
@@ -42,7 +43,7 @@
 while($row = mysqli_fetch_array($qry1)) {
   
 	
-	if($teacher['id'] === $row['user_id']){
+	if($teacher['id'] === $row['teacher_id']){
 		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
 		echo "<td>".$row['user_id']."</td>";
