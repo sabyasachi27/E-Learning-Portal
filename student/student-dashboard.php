@@ -1,4 +1,4 @@
-<!-- <?php include_once "../connection.php"; ?>
+<?php include_once "../connection.php"; ?>
 
 <?php
     //print_r($_REQUEST['id']);
