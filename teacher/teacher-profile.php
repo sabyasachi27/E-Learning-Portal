@@ -394,7 +394,7 @@ three.addEventListener('click', () => {
 <script src="../assets/js/main.js"></script>
 </body>
 <!-- this div is for the buttons -->
-<!-- <table border="1">
+<table border="1">
 	<tr>
 		<th>ID</th>
 		<th>user id</th>
@@ -458,7 +458,7 @@ else {
 	}
 
 
-?> -->
+?>
 <br><br>
 <a href="../course/insert-course.php">Add</a>
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
