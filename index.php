@@ -327,7 +327,7 @@
 </section><!-- End statistic Section -->
 
   <!-- Testimonial Section -->
-  <section class="text-gray-600 body-font">
+<section class="text-gray-600 body-font">
   <div class=" testimonial-title">
       <p>What are they saying</p>
     </div>
