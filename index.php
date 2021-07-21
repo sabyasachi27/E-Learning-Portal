@@ -1,7 +1,7 @@
 <?php include_once "connection.php"; ?>
 <?php 
   session_start();
-  print_r($_SESSION);
+ // print_r($_SESSION);
   if (isset($_SESSION['id'])) {
 		if($_SESSION['role']=='teacher')
     {
@@ -13,6 +13,7 @@
 	}
   // die();
 ?>
+
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#" style="height: 100%;">
 
@@ -135,18 +136,19 @@
 <!-- Query for manupulating courses -->
 <?php 
                           
-                  
-                        //   $a = rand(1, 5);
-                        //   $b = rand(1, 5);
-                        //  $c = rand(1, 5);
-                        //  $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
-                        //   $row = mysqli_fetch_array($qry);
+                  $q1 = mysqli_query($con, "SELECT `id` FROM `courses` ");
+	                $num = mysqli_num_rows($q1);
+                          $a = rand(1, $num);
+                          $b = rand(1, $num);
+                         $c = rand(1, $num);
+                         $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
+                          $row = mysqli_fetch_array($qry);
 
-                        //   $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
-                        //   $row1 = mysqli_fetch_array($qry1);
+                           $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
+                          $row1 = mysqli_fetch_array($qry1);
 
-                        //   $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
-                        //   $row2 = mysqli_fetch_array($qry2);
+                          $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
+                           $row2 = mysqli_fetch_array($qry2);
                         //  //echo (rand(10, 100));
                         //   //print_r ($row);
                   
@@ -340,7 +342,7 @@
 </section><!-- End statistic Section -->
 
   <!-- Testimonial Section -->
-<section class="text-gray-600 body-font">
+  <section class="text-gray-600 body-font">
   <div class=" testimonial-title">
       <p>What are they saying</p>
     </div>
