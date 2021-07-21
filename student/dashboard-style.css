@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.outer-container{
+    height: auto;
+    width: 430px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 2px 5px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.upper-container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper-container img{
+    width: 150px;
+    border-radius: 50%;
+}
+.lower-container{
+    background-color:black;
+   padding: 20px;
+   padding-top: 30px;
+}
+.name{
+    color:#fff;
+    font-size: 28px;
+}
+.profile{
+    color:#fff;
+    padding-top: 2px;
+    font-size: 23px;
+}
+.email{
+    padding-top: 2px;
+    font-size: 16px;
+}
+.email:hover{
+    display: inline-block;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.phone{
+    color:#fff;
+    padding-top: 2px;
+    font-size: 16px;
+}
+div p{
+    padding: 10px 0px 15px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.table-chart{
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: clip;
+}
+#tab-head1{
+    font-size: 18px;
+    text-align: center;
+}
+#tab-body2{
+    font-size: 14px;
+}

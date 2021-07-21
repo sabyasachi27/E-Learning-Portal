@@ -26,6 +26,7 @@
 		// print_r($user);die();
 		
 		$_SESSION['id'] = $user['id'];
+		$_SESSION['role'] = $role;
 
 		if ($role === 'student') {
 			// echo 'redirect to student profile';
