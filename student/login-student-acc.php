@@ -14,7 +14,7 @@
 		$user = mysqli_fetch_array($q1);
 		// print_r($user);
 		$_SESSION['id'] = $user['id'];
-
+		
 		header('location: stud-profile.php');
 		echo "Login successful";
 

@@ -159,7 +159,7 @@
       <h1>Welcome to <span>StudyLand</span></h1>
       <h3>Education is the most powerful weapon which you can use to change the world</h3>
       <div class="d-flex">
-        <a href="#" class="btn-get-started">Get Started</a>
+        <a href="get_started_content.php" class="btn-get-started">Get Started</a>
       </div>
     </div>
 </section> 
