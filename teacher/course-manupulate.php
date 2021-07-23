@@ -21,32 +21,32 @@
 			FROM 
 				`teacher`
 			WHERE 
-				`id` = ".$_['id'];
+				`id` = ".$_SESSION['id'];
 
 	$q1 = mysqli_query($con, $qr);
 
 	$teacher= mysqli_fetch_array($q1);
     //echo ''.$qr;
 
-	 echo 'Welcome to your profile '.$teacher['name'];
-	 echo '<br>';
+	//  echo 'Welcome to your profile '.$teacher['name'];
+	//  echo '<br>';
 
-	 echo 'Email: '.$teacher['email']; 
-	 echo '<br>';
+	//  echo 'Email: '.$teacher['email']; 
+	//  echo '<br>';
 
 	 
 
-     echo "Login Success";
+    //  echo "Login Success";
 
      $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `status` = 'active'");
      //print_r($qry1);
 while($row = mysqli_fetch_array($qry1)) {
   
 	
-	if($teacher['id'] === $row['teacher_id']){
+	if($teacher['id'] === $row['teacherid']){
 		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
-		echo "<td>".$row['user_id']."</td>";
+		echo "<td>".$row['teacherid']."</td>";
 		echo "<td><a href=../contents/contents.php?id=".$row['id'].">".$row['name']."</a></td>";
     echo "<td>".$row['description']."</td>";
     echo "<td><img src='".$row['image']."' width = '100'></td>";
@@ -68,3 +68,5 @@ else {
 ?>
 <br><br>
 <a href="../course/insert-course.php">Add</a>
+<br><br>
+<a href = "teacher-profile.php">back</a>
