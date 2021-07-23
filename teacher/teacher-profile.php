@@ -406,62 +406,62 @@ three.addEventListener('click', () => {
 		<th>Delete</th>
 		<th>Update</th>
 		
-	</tr>
+	</tr> -->
 
 <?php
 	
-	$qr = 	"SELECT 
-				*
-			FROM 
-				`teacher`
-			WHERE 
-				`id` = ".$_SESSION['id'];
+// 	$qr = 	"SELECT 
+// 				*
+// 			FROM 
+// 				`teacher`
+// 			WHERE 
+// 				`id` = ".$_SESSION['id'];
 
-	$q1 = mysqli_query($con, $qr);
+// 	$q1 = mysqli_query($con, $qr);
 
-	$teacher= mysqli_fetch_array($q1);
-    //echo ''.$qr;
+// 	$teacher= mysqli_fetch_array($q1);
+//     //echo ''.$qr;
 
-	 echo 'Welcome to your profile '.$teacher['name'];
-	 echo '<br>';
+// 	 echo 'Welcome to your profile '.$teacher['name'];
+// 	 echo '<br>';
 
-	 echo 'Email: '.$teacher['email']; 
-	 echo '<br>';
+// 	 echo 'Email: '.$teacher['email']; 
+// 	 echo '<br>';
 
 	 
 
-     echo "Login Success";
+//      echo "Login Success";
 
-     $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `status` = 'active'");
-     //print_r($qry1);
-while($row = mysqli_fetch_array($qry1)) {
+//      $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `status` = 'active'");
+//      //print_r($qry1);
+// while($row = mysqli_fetch_array($qry1)) {
   
 	
-	if($teacher['id'] === $row['user_id']){
-		echo "<tr>";
-		echo "<td>".$row['id']."</td>";
-		echo "<td>".$row['user_id']."</td>";
-		echo "<td><a href=../contents/contents.php?id=".$row['id'].">".$row['name']."</a></td>";
-    echo "<td>".$row['description']."</td>";
-    echo "<td><img src='".$row['image']."' width = '100'></td>";
-    echo "<td>".$row['type']."</td>";
-    echo "<td>".$row['coursefee']."</td>";
-		echo "<td><a href=../course/delete-course.php?id=".$row['id'].">Delete</a></td>";
-		echo "<td><a href=../course/update-course.php?id=".$row['id'].">Update</a></td>";
-		//echo "<td><a href=../contents/update-contents.php?id=".$row['id'].">Edit</a></td>";
-	echo "</tr>";
-}
-else {
-	echo "<br><br>Please Insert your contents . Currently you don't have any contents";
-}
+// 	if($teacher['id'] === $row['user_id']){
+// 		echo "<tr>";
+// 		echo "<td>".$row['id']."</td>";
+// 		echo "<td>".$row['user_id']."</td>";
+// 		echo "<td><a href=../contents/contents.php?id=".$row['id'].">".$row['name']."</a></td>";
+//     echo "<td>".$row['description']."</td>";
+//     echo "<td><img src='".$row['image']."' width = '100'></td>";
+//     echo "<td>".$row['type']."</td>";
+//     echo "<td>".$row['coursefee']."</td>";
+// 		echo "<td><a href=../course/delete-course.php?id=".$row['id'].">Delete</a></td>";
+// 		echo "<td><a href=../course/update-course.php?id=".$row['id'].">Update</a></td>";
+// 		//echo "<td><a href=../contents/update-contents.php?id=".$row['id'].">Edit</a></td>";
+// 	echo "</tr>";
+// }
+// else {
+// 	echo "<br><br>Please Insert your contents . Currently you don't have any contents";
+// }
 
-	}
+// 	}
 
 
 ?>
-<br><br>
-<a href="../course/insert-course.php">Add</a> -->
-            <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
+<!-- <br><br>
+<a href="../course/insert-course.php">Add</a>
+             <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
             <button class="btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href = "loginAs.php">LoginAs</a></button> -->
         
-</html>
+</html> 

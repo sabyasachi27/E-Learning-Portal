@@ -205,9 +205,12 @@ echo "</ul>";
 
 <!-- Querry for manupulating courses -->
 <?php 
-                          $a = rand(1, 5);
-                          $b = rand(1, 5);
-                          $c = rand(1, 5);
+
+                        $q1 = mysqli_query($con, "SELECT `id` FROM `courses` ");
+                        $num = mysqli_num_rows($q1);
+                          $a = rand(1, $num);
+                          $b = rand(1, $num);
+                          $c = rand(1, $num);
                          $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
                           $row = mysqli_fetch_array($qry);
 
