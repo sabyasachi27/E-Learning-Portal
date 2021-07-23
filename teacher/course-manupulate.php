@@ -39,10 +39,10 @@
     //  echo "Login Success";
 
      $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `status` = 'active'");
-     //print_r($qry1);
+    //  print_r($teacher[id]);
+
 while($row = mysqli_fetch_array($qry1)) {
   
-	
 	if($teacher['id'] === $row['teacherid']){
 		echo "<tr>";
 		echo "<td>".$row['id']."</td>";
