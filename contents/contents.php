@@ -57,3 +57,5 @@
 ?>
 <br><br>
 <a href="add-contents.php">Add</a>
+<br><br>
+<a href="../teacher/course-manupulate.php">Back</a>

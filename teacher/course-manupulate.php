@@ -38,7 +38,7 @@
 
     //  echo "Login Success";
 
-     $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `teacherid` = '".$_SESSION['id']."' ,`status` = 'active'");
+     $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `teacherid` = '".$_SESSION['id']."' AND `status` = 'active'");
      //print_r($qry1);
 while($row = mysqli_fetch_array($qry1)) {
   

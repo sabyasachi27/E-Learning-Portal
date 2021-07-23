@@ -462,27 +462,27 @@ echo "</ul>";
 
 <?php
 	
-	$qr = 	"SELECT 
-				*
-			FROM 
-				`student`
-			WHERE 
-				`id` = ".$_SESSION['id'];
+	// $qr = 	"SELECT 
+	// 			*
+	// 		FROM 
+	// 			`student`
+	// 		WHERE 
+	// 			`id` = ".$_SESSION['id'];
 
-	$q1 = mysqli_query($con, $qr);
+	// $q1 = mysqli_query($con, $qr);
 
-	$student= mysqli_fetch_array($q1);
-    //echo ''.$qr;
+	// $student= mysqli_fetch_array($q1);
+  //   //echo ''.$qr;
 
-	 echo 'Welcome to your profile '.$student['name'];
-	 echo '<br>';
+	//  echo 'Welcome to your profile '.$student['name'];
+	//  echo '<br>';
 
-	 echo 'Email: '.$student['email']; 
-	 echo '<br>';
+	//  echo 'Email: '.$student['email']; 
+	//  echo '<br>';
 
 	 
 
-     echo "Login Success";
+  //    echo "Login Success";
 
 ?>
             <!-- <button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href = "registeras.php">Register</a></button>
