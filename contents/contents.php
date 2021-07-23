@@ -23,14 +23,14 @@
 
     //print_r($_REQUEST['id']);
 
-    $qry = mysqli_query($con, "SELECT * FROM `contents` WHERE `courseid` = '".$_REQUEST['id']."' AND `status` = 'active'");
+    $qry = mysqli_query($con, "SELECT * FROM `contents` WHERE `topicid` = '".$_REQUEST['id']."' AND `status` = 'active'");
     while($row = mysqli_fetch_array($qry)) {
         //print_r($row);
 	
-        if(isset($row['courseid'])){
+        if(isset($row['topicid'])){
             echo "<tr>";
             echo "<td>".$row['id']."</td>";
-            echo "<td>".$row['courseid']."</td>";
+            echo "<td>".$row['topicid']."</td>";
             echo "<td>".$row['heading']."</a></td>";
         echo "<td>".$row['type']."</td>";
         echo "<td>".$row['links']."</td>";
@@ -56,4 +56,4 @@
 
 ?>
 <br><br>
-<a href="../add-contents.php">Add</a>
+<a href="add-contents.php">Add</a>

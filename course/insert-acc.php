@@ -29,7 +29,7 @@ $qry_exec = mysqli_query($con, $qry);
         {
             
             
-            header('location: ../contents/add-contents.php');
+            header('location: ../teacher/course-manupulate.php');
             echo "Successfully inserted the topic ";
         }
         else

@@ -59,6 +59,7 @@ while($row = mysqli_fetch_array($qry1)) {
 }
 else {
 	echo "<br><br>Please Insert your contents . Currently you don't have any contents";
+	break;
 }
 
 	}

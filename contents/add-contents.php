@@ -14,7 +14,7 @@
 <body> 
 
 	<form action="add-contents-acc.php" method="post">
-		Topic: 
+		Course: 
 		<select name="topicId">
 			<option value="">Select a topic</option>
 			<?php
@@ -25,7 +25,7 @@
 			?>
 		</select><br><br>
 
-
+		Topic: <input type
 		Heading: <input type="text" name="heading"><br><br>
 		Type/Subject: <input type="message" name="type"><br><br>
 		Links: <input type="hyperlink" name="links"><br><br>
