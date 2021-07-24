@@ -32,13 +32,8 @@ $temp = $_REQUEST['topicId'];
         if($qry_exec)
         {
             
-<<<<<<< HEAD
-            header('location: contents.php');
-            echo 'Successfully inserted the contents of ' .$course['name'] ;
-=======
             header("location: contents.php?id={$temp}");
             echo "Successfully inserted the contents of " .$course['name'] ;
->>>>>>> fee24c0fd2dd0768eb299ef6c10a466ee0c59756
         }
         else
         {

@@ -14,15 +14,15 @@
 	$student= mysqli_fetch_array($q1);
     //echo ''.$qr;
 
-	 echo 'Name : '.$student['name'];
-	 echo '<br>';
+	//  echo 'Name : '.$student['name'];
+	//  echo '<br>';
 
-	 echo 'Email : '.$student['email']; 
-	 echo '<br>';
+	//  echo 'Email : '.$student['email']; 
+	//  echo '<br>';
 
-     echo 'Phone Number : '.$student['mobnumber']; 
-	 echo '<br>';
-?> -->
+  //    echo 'Phone Number : '.$student['mobnumber']; 
+	//  echo '<br>';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
