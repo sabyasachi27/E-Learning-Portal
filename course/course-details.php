@@ -58,7 +58,7 @@
                           $qry3= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$_REQUEST['id']."' ");
                           $row3 = mysqli_fetch_array($qry3);
 
-                          $qry4 = mysqli_query($con, "SELECT * FROM `teacher` WHERE `id` = '".$row3['user_id']."' ");
+                          $qry4 = mysqli_query($con, "SELECT * FROM `teacher` WHERE `id` = '".$row3['teacherid']."' ");
                           $teacher = mysqli_fetch_array($qry4);
 
                           //echo (rand(10, 100));
