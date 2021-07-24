@@ -44,7 +44,7 @@
             <div class="profile">Teacher</div>
             <a href="#"><div class="email"><?php print_r($teacher['email']);?></div></a>
             <div class="phone"><?php print_r($teacher['mobnumber']);?></div>
-            <p>Selected courses</p>
+            <p>Teaching courses</p>
             <div class="table-chart">
                 <table class="table table-striped table-hover">
                     <thead id="tab-head1">
