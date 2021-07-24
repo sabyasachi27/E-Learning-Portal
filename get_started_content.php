@@ -19,10 +19,11 @@
     <title>get_started_content</title>
 </head>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
 body{
       margin: 0px;
       padding: 0px;
-      /* font-family: 'Baloo Bhai 2', cursive; */
+      font-family: 'Baloo Bhai 2', cursive;
     }
 html{
     scroll-behavior: smooth;

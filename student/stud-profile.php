@@ -71,12 +71,13 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      <!-- ======SEARCH BUTTON====== -->
+      <!-- <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search courses">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </form> -->
       <div class="action">
     <div class="profile" onclick="menuToggle();">
       <img src="../assets/img/man.png">

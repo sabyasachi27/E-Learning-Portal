@@ -29,7 +29,7 @@ $course= mysqli_fetch_array($q2);
         if($qry_exec)
         {
             
-            header('location: ../teacher/teacher-profile.php');
+            header('location: contents.php');
             echo 'Successfully inserted the contents of ' .$course['name'] ;
         }
         else
