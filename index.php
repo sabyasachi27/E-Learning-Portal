@@ -276,7 +276,7 @@
                     </div>
 
                     <?php echo "<h3><a href=course/course-details.php?id=".$row['id'].">".$row['name']."</a></h3>" ?>
-                    <p><?php print_r($row['description']);?></p>
+                    <!-- <p><?php print_r($row['description']);?></p> -->
                   </div>
                 </div>
               </div> <!-- End Course Item-->
@@ -291,7 +291,7 @@
                     </div>
 
                     <?php echo "<h3><a href=course/course-details.php?id=".$row1['id'].">".$row1['name']."</a></h3>" ?>
-                    <p><?php print_r($row1['description']);?></p>
+                    <!-- <p><?php print_r($row1['description']);?></p> -->
                    
                   </div>
                 </div>
@@ -307,7 +307,7 @@
                     </div>
 
                     <?php echo "<h3><a href=course/course-details.php?id=".$row2['id'].">".$row2['name']."</a></h3>" ?>
-                    <p><?php print_r($row2['description']);?></p>
+                    <!-- <p><?php print_r($row2['description']);?></p> -->
                     
                   </div>
                 </div>

@@ -1,18 +1,52 @@
 <?php include_once "../connection.php"; ?>
-<table border="1">
-	<tr>
-		<th>ID</th>
-		<th>user id</th>
-		<th>Course Name</th>
-    <th>Course Description</th>
-    <th>Course Image</th>
-    <th>Course Type</th>
-    <th>Course Fee</th>
-		<th>Delete</th>
-		<th>Update</th>
-		
-	</tr>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+.content-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	fon-size: 0.9em;
+	min-width: 400px;
+}
+.content-table thead tr{
+background-color: #499bef;
+color: white:
+text-align: left;
+font-weight: bold;
+}
+body a{
+background-color: #6979d8;	
+padding: 4px 8px 4px 8px;
+border-radius: 40px;
+text-decoration: none; 
+}
+body a:hover{
+	cursor: pointer;
+}
+</style>
+<body>
+<table class="content-table" border="1">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>user id</th>
+			<th>Course Name</th>
+		<th>Course Description</th>
+		<th>Course Image</th>
+		<th>Course Type</th>
+		<th>Course Fee</th>
+			<th>Delete</th>
+			<th>Update</th>
+			
+		</tr>
+	</thead>
     <?php
 	
 	session_start();
@@ -69,4 +103,6 @@ else {
 <br><br>
 <a href="../course/insert-course.php">Add</a>
 <br><br>
-<a href = "teacher-profile.php">back</a>
+<a href = "teacher-profile.php">back</a>	
+</body>
+</html>
