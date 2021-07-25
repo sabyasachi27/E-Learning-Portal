@@ -154,8 +154,8 @@
             <h2 class="name">Type</h2>
             <select name="type" class="option">
                 <option disabled="disabled" selected="selected">--choose option</option>
-                <option value="paid">free</option>
-                <option value="free">paid</option>
+                <option value="free">free</option>
+                <option value="paid">paid</option>
             </select>
             <h2 class="name">course fee</h2>
             <input type="text" class="course-fee" name="course-fee" placeholder="Enter course fee">
