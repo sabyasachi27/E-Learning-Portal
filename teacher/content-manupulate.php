@@ -12,12 +12,12 @@
 .content-table{
 	border-collapse: collapse;
 	margin: 25px 0;
-	fon-size: 0.9em;
+	font-size: 0.9em;
 	min-width: 400px;
 }
 .content-table thead tr{
 background-color: #499bef;
-color: white:
+color: white;
 text-align: left;
 font-weight: bold;
 }
@@ -72,7 +72,7 @@ body a:hover{
 
     //  echo "Login Success";
 
-     $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `teacherid` = '".$_SESSION['id']."' AND `status` = 'active'");
+     $qry1 = mysqli_query($con, "SELECT * FROM `contents` WHERE `teacherid` = '".$_SESSION['id']."' AND `status` = 'active'");
      //print_r($qry1);
 while($row = mysqli_fetch_array($qry1)) {
   

@@ -389,7 +389,7 @@ three.addEventListener('click', () => {
 </script>
 <script>
   document.getElementById('myButton').onclick = function (){
-    location.href = "course-manupulate.php";
+    location.href = "content-manupulate.php";
   };
 </script> 
 <script src="../assets/js/main.js"></script>
