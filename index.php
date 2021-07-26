@@ -402,7 +402,7 @@
             <div class="info-box  mb-4">
             <i class="fa fa-envelope"></i>
               <h3>Email Us</h3>
-              <p>contact@gmail.com</p>
+              <p>mystudyland.edu@gmail.com</p>
             </div>
           </div>
 
@@ -464,7 +464,7 @@
             Kolkata-700063<br>
             West Bengal <br><br>
             <strong>Phone:</strong> +91 9876543210 <br>
-            <strong>Email:</strong> contact@gmail.com<br>
+            <strong>Email:</strong> mystudyland.edu@gmail.com<br>
           </p>
         </div>
 
