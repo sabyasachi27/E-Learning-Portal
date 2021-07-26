@@ -207,21 +207,56 @@ echo "</ul>";
 <!-- Querry for manupulating courses -->
 <?php 
 
-                        $q1 = mysqli_query($con, "SELECT `id` FROM `courses` ");
-                        $num = mysqli_num_rows($q1);
-                          $a = rand(1, $num);
-                          $b = rand(1, $num);
-                          $c = rand(1, $num);
-                         $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
-                          $row = mysqli_fetch_array($qry);
+        $q1 = mysqli_query($con, "SELECT `id` FROM `contents` ");
+        $num = mysqli_num_rows($q1);
+        $a = rand(1, $num);
+        $b = rand(1, $num);
+       $c = rand(1, $num);
+       $d = rand(1, $num);
+       $e = rand(1, $num);
+       $f = rand(1, $num);
+       $g = rand(1, $num);
+       $h = rand(1, $num);
+       $qry= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$a."'");
+        $row = mysqli_fetch_array($qry);
+        //print_r($row);die();
+        $q = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$row['courseid']."'");
+        $r = mysqli_fetch_array($q);
+         $qry1 = mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$b."'");
+        $row1 = mysqli_fetch_array($qry1);
+        $q1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` =  '".$row1['courseid']."' ");
+        $r1 = mysqli_fetch_array($q1);
+        $qry2 = mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$c."'");
+        $row2 = mysqli_fetch_array($qry2);
+         $q2 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` =  '".$row2['courseid']."' ");
+        $r2 = mysqli_fetch_array($q2);
 
-                          $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
-                          $row1 = mysqli_fetch_array($qry1);
+        $qry3= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$d."'");
+         $row3 = mysqli_fetch_array($qry3);
+         $q3 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` =  '".$row3['courseid']."' ");
+        $r3 = mysqli_fetch_array($q3);
 
-                          $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
-                          $row2 = mysqli_fetch_array($qry2);
+        $qry4= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$e."'");
+         $row4 = mysqli_fetch_array($qry4);
+         $q4 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$row4['courseid']."'");
+        $r4 = mysqli_fetch_array($q4);
 
+        $qry5= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$f."'");
+         $row5 = mysqli_fetch_array($qry5);
+         $q5 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$row5['courseid']."' ");
+        $r5 = mysqli_fetch_array($q5);
 
+        $qry6= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$g."'");
+         $row6 = mysqli_fetch_array($qry6);
+         $q6 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` =  '".$row6['courseid']."'");
+        $r6 = mysqli_fetch_array($q6);
+
+        $qry7= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$h."'");
+         $row7 = mysqli_fetch_array($qry7);
+         $q7 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$row7['courseid']."' ");
+        $r7 = mysqli_fetch_array($q7);
+        $qry2= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$c."'");
+         
                           //$qry3= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$_REQUEST['id']."' ");
                           //$row3 = mysqli_fetch_array($qry3);
 
@@ -231,7 +266,7 @@ echo "</ul>";
                           //echo (rand(10, 100));
                           //echo $teacher['name'];die();
                           
-?>
+ ?>
 
 <!-- ======Start Ecommerce Home Section====== -->
 <section class="text-gray-600 body-font">
@@ -242,82 +277,82 @@ echo "</ul>";
     <div class="flex flex-wrap -m-4">
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-         <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$row['image'].">" ; ?>
+         <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row['name']);?></h3> <!-- course name-->
-          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($row['description']);?></h2>  <!-- content name-->
-          <button class="buy-btn">$<?php print_r($row['coursefee']);?></button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row['contentname']);?></h3> <!-- course name-->
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r['name']);?></h2>  <!-- content name-->
+          <button class="buy-btn">$<?php print_r($row['contentfee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261">
+          <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r1['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-          <button class="buy-btn">$21.15</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row1['contentname']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r1['name']);?></h2>
+          <button class="buy-btn">$<?php print_r($row1['contentfee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262">
+        <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r2['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-          <button class="buy-btn">$12.40</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row2['contentname']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r2['name']);?></h2>
+          <button class="buy-btn">$<?php print_r($row2['contentfee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263">
+        <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r3['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-          <button class="buy-btn">$18.40</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row3['contentname']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r3['name']);?></h2>
+          <button class="buy-btn">$<?php print_r($row3['contentfee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264">
+        <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r4['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-          <button class="buy-btn">$16.00</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row4['contentname']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r4['name']);?></h2>
+          <button class="buy-btn">$<?php print_r($row4['contentfee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265">
+        <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r5['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-          <button class="buy-btn">$21.15</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row5['contentname']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r5['name']);?></h2>
+          <button class="buy-btn">$<?php print_r($row5['contentfee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267">
+        <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r6['image'].">" ; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-          <button class="buy-btn">$12.00</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row6['contentname']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r6['name']);?></h2>
+          <button class="buy-btn">$<?php print_r($row6['contentfee']);?></button>
         </div>
       </div>
       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
         <a class="block relative h-48 rounded overflow-hidden">
-          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268">
+        <?php echo "<img alt=ecommerce class=object-cover object-center w-full h-full block src= ".$r7['image'].">"; ?>
         </a>
         <div class="mt-4">
-          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-          <h2 class="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-          <button class="buy-btn">$18.40</button>
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><?php print_r($row7['contentname']);?></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium"><?php print_r($r7['name']);?></h2>
+          <button class="buy-btn">$<?php print_r($row7['contentfee']);?></button>
         </div>
       </div>
     </div>
