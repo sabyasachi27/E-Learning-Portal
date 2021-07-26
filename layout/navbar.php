@@ -17,7 +17,7 @@
         <li class="active"><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catagories <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#popular-courses">Popular courses</a></li>
             <li><a href="#contact">contact</a></li>
