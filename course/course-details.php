@@ -45,18 +45,18 @@ $num = mysqli_num_rows($q1);
         $a = rand(1, $num);
         $b = rand(1, $num);
        $c = rand(1, $num);
-       $qry= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$a."' ");
+       $qry= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$a."' ");
         $row = mysqli_fetch_array($qry);
-        $q = mysqli_query($con, "SELECT * FROM `contents` WHERE `courseid` = '".$row['id']."' ");
+        $q = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$row['courseid']."' ");
         $r = mysqli_fetch_array($q);
-         $qry1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$b."' ");
+         $qry1 = mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$b."' ");
         $row1 = mysqli_fetch_array($qry1);
-        $q1 = mysqli_query($con, "SELECT * FROM `contents` WHERE `courseid` = '".$row1['id']."' ");
+        $q1 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$row1['courseid']."' ");
         $r1 = mysqli_fetch_array($q1);
 
-        $qry2= mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$c."' ");
+        $qry2= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$c."' ");
          $row2 = mysqli_fetch_array($qry2);
-         $q2 = mysqli_query($con, "SELECT * FROM `contents` WHERE `courseid` = '".$row2['id']."' ");
+         $q2 = mysqli_query($con, "SELECT * FROM `courses` WHERE `id` = '".$row2['courseid']."' ");
         $r2 = mysqli_fetch_array($q2);
 
                           $qry3= mysqli_query($con, "SELECT * FROM `contents` WHERE `id` = '".$_REQUEST['id']."' ");
@@ -139,11 +139,11 @@ $num = mysqli_num_rows($q1);
                   <img src="../assets/img/course-1.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4><?php print_r($row['name'])?></h4>
-                      <p class="price"><?php print_r($r['contentfee'])?></p>
+                      <h4><?php print_r($r['name'])?></h4>
+                      <p class="price"><?php print_r($row['contentfee'])?></p>
                     </div>
                         
-                    <?php echo "<h3><a href=course/course-details.php?id=".$r['id'].">".$r['contentname']."</a></h3>" ?>
+                    <?php echo "<h3><a href=course/course-details.php?id=".$row['id'].">".$row['contentname']."</a></h3>" ?>
                     <!-- <p></p> -->
                   </div>
                 </div>
@@ -154,11 +154,11 @@ $num = mysqli_num_rows($q1);
                   <img src="../assets/img/course-2.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4><?php print_r($row1['name'])?></h4>
-                      <p class="price"><?php print_r($r1['contentfee'])?></p>
+                      <h4><?php print_r($r1['name'])?></h4>
+                      <p class="price"><?php print_r($row1['contentfee'])?></p>
                     </div>
 
-                    <?php echo "<h3><a href=course/course-details.php?id=".$r1['id'].">".$r1['contentname']."</a></h3>" ?>
+                    <?php echo "<h3><a href=course/course-details.php?id=".$row1['id'].">".$row1['contentname']."</a></h3>" ?>
                     <!-- <p></p> -->
                    
                   </div>
@@ -170,11 +170,11 @@ $num = mysqli_num_rows($q1);
                   <img src="../assets/img/course-3.jpg" class="img-fluid" alt="...">
                   <div class="course-content">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h4><?php print_r($row2['name'])?></h4>
-                      <p class="price"><?php print_r($r2['contentfee'])?></p>
+                      <h4><?php print_r($r2['name'])?></h4>
+                      <p class="price"><?php print_r($row2['contentfee'])?></p>
                     </div>
 
-                    <?php echo "<h3><a href=course/course-details.php?id=".$r2['id'].">".$r2['contentname']."</a></h3>" ?>
+                    <?php echo "<h3><a href=course/course-details.php?id=".$row2['id'].">".$row2['contentname']."</a></h3>" ?>
                     <!-- <p></p> -->
                     
                   </div>
