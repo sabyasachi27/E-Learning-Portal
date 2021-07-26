@@ -492,7 +492,7 @@ $qry = mysqli_query($con, "SELECT * FROM `contents` WHERE `teacherid` = '" . $_S
                 </tbody>
             </table>
             <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>100</b> entries</div>
+                <div class="hint-text">Showing <b>5</b> out of <b>50</b> entries</div>
                 <ul class="pagination">
                     <li class="page-item disabled"><a href="#">Previous</a></li>
                     <li class="page-item"><a href="#" class="page-link">1</a></li>

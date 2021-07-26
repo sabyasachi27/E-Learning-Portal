@@ -127,6 +127,9 @@
         font-size: 16px;
         margin-bottom: 15px;
     }
+    button:hover{
+		background-color: #43abe8;
+	}
 </style>
 <body>
     <div class="content-form"><h1>Add Content</h1></div>
