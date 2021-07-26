@@ -234,13 +234,13 @@ echo "</ul>";
       <h1>Record Video</h1>
       <p>Use basic tools like a smartphone or a DSLR camera. Add a good microphone and you’re ready to start.
          If you don’t like being on camera, just capture your screen.</p>
-      <button id="myButton">Get Started</button>
+      <button id="myButton1">Get Started</button>
     </div>
     <div class="content third">
       <h1>Launch Course</h1>
       <p>Gather your first ratings, reviews by promoting your course through social media and professional networks.
          Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.</p>
-      <button id="myButton" >Get Started</button>
+      <button id="myButton2" >Get Started</button>
     </div>
   </div>
 </section>
@@ -389,6 +389,14 @@ three.addEventListener('click', () => {
 </script>
 <script>
   document.getElementById('myButton').onclick = function (){
+    location.href = "../contents/add-contents.php";
+  };
+
+  document.getElementById('myButton1').onclick = function (){
+    location.href = "../contents/add-contents.php";
+  };
+
+  document.getElementById('myButton2').onclick = function (){
     location.href = "../contents/add-contents.php";
   };
 </script> 

@@ -359,43 +359,64 @@ $qry = mysqli_query($con, "SELECT * FROM `contents` WHERE `teacherid` = '" . $_S
                     </tr>
                 </thead>
                 <tbody>
+                <?php
+                // echo "<span class=custom-checkbox>";
+                // echo "<input type=checkbox id=checkbox1 name=options[] value=1>";
+                // echo "<label for=checkbox1></label>";
+                // echo "</span>";
+                // echo "</td>";
+                $c = 0;
+                while ($row = mysqli_fetch_array($qry)) {
+                    //print_r($row);
+
+                    if (isset($row['teacherid'])) {
+                        // echo "<tr>";
+                        // //echo "<td>".$row['id']."</td>";
+                        // echo "<td>" . $row['contentname'] . "</td>";
+                        // echo "<td>" . $row['createdAt'] . "</a></td>";
+                        // echo "<td>" . $row['updatedAt'] . "</td>";
+                        // echo "<td>" . $row['type'] . "</td>";
+                        // echo "<td>" . $row['contentfee'] . "</td>";
+                        // //
+                        // //echo "<td><a href=delete-content.php?id=".$row['id'].">Delete</a></td>";
+                        // //echo "<td><a href=update-contents.php?id=".$row['id'].">Update</a></td>";
+                        // echo "<a href=# class=edit ><i class=material-icons data-toggle='tooltip' title=Edit>&#xE254;</i></a>";
+                        // echo "<a href=delete-content.php?id=" . $row['id'] . " class=delete ><i class=material-icons data-toggle='tooltip' title=Delete>&#xE872;</i></a>";
+                        // echo "</td>";
+                        // echo "</tr>";
+
+                ?>
                     <tr>
                         <td>
-                            <?php
-                            echo "<span class=custom-checkbox>";
-                            echo "<input type=checkbox id=checkbox1 name=options[] value=1>";
-                            echo "<label for=checkbox1></label>";
-                            echo "</span>";
-                            echo "</td>";
-                            while ($row = mysqli_fetch_array($qry)) {
-                                //print_r($row);
-
-                                if (isset($row['teacherid'])) {
-                                    echo "<tr>";
-                                    //echo "<td>".$row['id']."</td>";
-                                    echo "<td>" . $row['contentname'] . "</td>";
-                                    echo "<td>" . $row['createdAt'] . "</a></td>";
-                                    echo "<td>" . $row['updatedAt'] . "</td>";
-                                    echo "<td>" . $row['type'] . "</td>";
-                                    echo "<td>" . $row['contentfee'] . "</td>";
-                                    //
-                                    //echo "<td><a href=delete-content.php?id=".$row['id'].">Delete</a></td>";
-                                    //echo "<td><a href=update-contents.php?id=".$row['id'].">Update</a></td>";
-                                    echo "<a href=# class=edit ><i class=material-icons data-toggle='tooltip' title=Edit>&#xE254;</i></a>";
-                                    echo "<a href=delete-content.php?id=" . $row['id'] . " class=delete ><i class=material-icons data-toggle='tooltip' title=Delete>&#xE872;</i></a>";
-                                    echo "</td>";
-                                    echo "</tr>";
-                                } else {
-
-                                    echo "<br><br>Please Insert your contents . Currently you don't have any contents";
-                                }
-                            }
+                            <span class="custom-checkbox">
+                                <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                                <label for="checkbox2"></label>
+                            </span>
+                        </td>
+                        <td><?=++$c?></td>
+                        <td><?=$row['contentname']?></td>
+                        <td><?=$row['createdAt']?></td>
+                        <td><?=$row['updatedAt']?></td>
+                        <td><?=$row['type']?></td>
+                        <td><?=$row['contentfee']?></td>
+                        <td>
+                            <a href="update-contents.php?id=<?=$row['id']?>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Edit"></i></a>
+                            <a href="delete-content.php?id=<?=$row['id']?>" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Delete"></i></a>
+                        </td>
+                    </tr>
 
 
+                <?php
 
 
-                            ?>
-                    <tr>
+                    } else {
+
+                        echo "<br><br>Please Insert your contents . Currently you don't have any contents";
+                    }
+                }
+
+                ?>
+                    <!-- <tr>
                         <td>
 
                             <span class="custom-checkbox">
@@ -467,7 +488,7 @@ $qry = mysqli_query($con, "SELECT * FROM `contents` WHERE `teacherid` = '" . $_S
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
             <div class="clearfix">
